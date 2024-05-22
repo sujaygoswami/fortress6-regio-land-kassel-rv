@@ -1,0 +1,55 @@
+.region-kassel-land{
+
+	footer.footer{
+
+        .footer-secondary{
+            & > .main-wrap{
+                padding: 80px 0;
+                background-color: white;
+                @include border-radius(10px);
+            }
+        }
+
+        .footer-primary{
+            & > .main-wrap{
+                padding: 95px 0 30px 0;
+            }
+        }
+
+
+        .footer-social{
+            & > div{
+                display: flex;
+                column-gap: 23px;
+                color: var(--site-default-gray);
+                align-items: center;
+                margin-bottom: 23px;
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+
+                span{
+                    width: 52px;
+                    height: 52px;
+                    @include border-radius(100%);
+                    background-color: var(--site-primary-color-dark);
+                    text-align: center;
+                    display: grid;
+                    align-items: center;
+
+                    img{
+                        margin: 0 auto;
+                    }
+                }
+
+                i{
+                    font-style: normal;
+                    font-weight: var(--site-primary-font-bold);
+                    font-size: 22px;
+                }
+            }
+        }
+        
+    }
+	
+}
