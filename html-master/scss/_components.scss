@@ -188,16 +188,23 @@ html, body{
 		clear: both;
 	}
 
-	.palce-right{
+	.place-right{
 
 		float: right;
+
+		&.left-gap-type-1{
+			margin-left: 55px;
+		}
 		
 	}
 
-	.palce-left{
+	.place-left{
 
 		float: left;
-		
+
+		&.right-gap-type-1{
+			margin-right: 55px;
+		}
 	}
 
 	.clear{

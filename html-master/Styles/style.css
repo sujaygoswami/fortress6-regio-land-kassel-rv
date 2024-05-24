@@ -8151,10 +8151,14 @@ html, body {
   .region-kassel-land .palce-left-clear {
     float: left;
     clear: both; }
-  .region-kassel-land .palce-right {
+  .region-kassel-land .place-right {
     float: right; }
-  .region-kassel-land .palce-left {
+    .region-kassel-land .place-right.left-gap-type-1 {
+      margin-left: 55px; }
+  .region-kassel-land .place-left {
     float: left; }
+    .region-kassel-land .place-left.right-gap-type-1 {
+      margin-right: 55px; }
   .region-kassel-land .clear {
     clear: both; }
   .region-kassel-land a {
@@ -8235,6 +8239,14 @@ html, body {
 .region-kassel-land .default-row {
   row-gap: 40px; }
 
+.region-kassel-land .default-plus-row {
+  margin-left: -45px;
+  margin-right: -45px;
+  row-gap: 45px; }
+  .region-kassel-land .default-plus-row > .my-col {
+    padding-left: 45px;
+    padding-right: 45px; }
+
 .region-kassel-land .sm-row {
   margin-left: -20px;
   margin-right: -20px;
@@ -8265,6 +8277,9 @@ html, body {
 .region-kassel-land .full-viewport-height {
   height: 100vh; }
 
+.region-kassel-land .full-viewport-min-height {
+  min-height: 100vh; }
+
 .region-kassel-land .inset-container.type-1 {
   padding-left: 60px;
   padding-right: 60px; }
@@ -8274,6 +8289,15 @@ html, body {
 
 .region-kassel-land .inset-container.type-2 {
   max-width: 75.90361%; }
+
+.region-kassel-land .inset-container.type-3 {
+  max-width: 82.16867%; }
+
+.region-kassel-land .border-radius-full-round {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%; }
 
 .region-kassel-land .border-radius-default {
   -webkit-border-radius: 15px;
@@ -8294,7 +8318,7 @@ html, body {
   margin-bottom: 40px; }
 
 .region-kassel-land .element-gap.element-gap-medium {
-  margin-bottom: 55px; }
+  margin-bottom: 50px; }
 
 .region-kassel-land .element-gap.element-gap-medium-plus {
   margin-bottom: 70px; }
@@ -8322,6 +8346,10 @@ html, body {
 .region-kassel-land .section-top-bottom-pad-normal {
   padding-top: 140px;
   padding-bottom: 140px; }
+
+.region-kassel-land .section-top-bottom-pad-normal-type-2 {
+  padding-top: 90px;
+  padding-bottom: 160px; }
 
 .region-kassel-land .section-bg-type-1 {
   background-position: bottom center;
@@ -8446,6 +8474,8 @@ html, body {
     height: 100%;
     display: grid;
     align-items: center; }
+    .region-kassel-land .page-banner-module .slider-context .normal-text-element-module {
+      padding: 40px 0; }
   .region-kassel-land .page-banner-module .banner-content-part .page-banner-single-search-form {
     max-width: 73.50649%; }
     .region-kassel-land .page-banner-module .banner-content-part .page-banner-single-search-form.width-type-2 {
@@ -8465,10 +8495,15 @@ html, body {
         background-size: cover;
         background-position: center top;
         background-repeat: no-repeat; }
+        .region-kassel-land .page-banner-module .main-banner-part.has-view-height .banner-slider .sliding-part.set-back.pos-type-2 {
+          background-size: auto;
+          background-position: right bottom; }
   .region-kassel-land .page-banner-module .main-banner-part.viewport-height-type-1 {
     height: calc(100vh - 70px); }
   .region-kassel-land .page-banner-module .main-banner-part.viewport-height-type-2 {
     height: calc(100vh - 130px); }
+  .region-kassel-land .page-banner-module .main-banner-part.viewport-height-type-3 {
+    height: 100vh; }
 
 .region-kassel-land .page-banner-single-search-form .module-card {
   padding: 62px 45px; }
@@ -8742,6 +8777,147 @@ html, body {
         text-align: center;
         padding: 10px 20px;
         min-width: 104px; }
+
+.region-kassel-land .bredcrumb-module ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  column-gap: 12px; }
+  .region-kassel-land .bredcrumb-module ul li {
+    margin: 0px;
+    padding: 0 12px 0 0;
+    font-size: 15px;
+    color: var(--site-primary-color-dark);
+    letter-spacing: 0.3px;
+    position: relative; }
+    .region-kassel-land .bredcrumb-module ul li:not(.current) {
+      opacity: 0.5; }
+    .region-kassel-land .bredcrumb-module ul li a {
+      color: var(--site-primary-color-dark); }
+    .region-kassel-land .bredcrumb-module ul li:after {
+      content: '|';
+      position: absolute;
+      right: -2px; }
+    .region-kassel-land .bredcrumb-module ul li:last-child {
+      padding-right: 0px; }
+      .region-kassel-land .bredcrumb-module ul li:last-child:after {
+        display: none; }
+
+.region-kassel-land .product-detail-slider .download-expose {
+  margin-left: auto; }
+  .region-kassel-land .product-detail-slider .download-expose a {
+    padding-left: 53px;
+    background-image: url(../Images/download-expose-icon.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: left center;
+    font-size: 18px;
+    font-weight: var(--site-primary-font-bold);
+    line-height: 40px;
+    letter-spacing: 0.9px; }
+
+.region-kassel-land .product-detail-slider .slider-element img {
+  width: 100%;
+  height: auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
+
+.region-kassel-land .product-detail-slider .custom-pagi {
+  display: flex;
+  column-gap: 35px;
+  align-items: center;
+  margin-top: 22px; }
+
+.region-kassel-land .product-detail-slider .pagingInfo {
+  font-size: 24px;
+  line-height: normal;
+  font-weight: var(--site-primary-font-bold);
+  color: var(--site-primary-color-dark); }
+
+.region-kassel-land .product-detail-slider .slick-arrow {
+  width: 34px;
+  height: 21.43px;
+  background-size: 34px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  font-size: 0px; }
+  .region-kassel-land .product-detail-slider .slick-arrow.slick-disabled {
+    pointer-events: none;
+    opacity: 0.41; }
+  .region-kassel-land .product-detail-slider .slick-arrow.slick-prev {
+    background-image: url(../Images/prev-arrow-primary-dark.svg); }
+  .region-kassel-land .product-detail-slider .slick-arrow.slick-next {
+    background-image: url(../Images/next-arrow-primary-dark.svg); }
+
+.region-kassel-land .product-detail-data-info > .main-wrap {
+  max-width: 91%; }
+
+.region-kassel-land .product-detail-data-info .object-id {
+  letter-spacing: 0.9px; }
+
+.region-kassel-land .product-detail-data-info .product-detal-labeled-info {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px;
+  background-color: var(--site-primary-color-light);
+  padding: 16px 0; }
+  .region-kassel-land .product-detail-data-info .product-detal-labeled-info > .main-wrap {
+    display: flex; }
+    .region-kassel-land .product-detail-data-info .product-detal-labeled-info > .main-wrap div {
+      border-left: 1px solid #707070;
+      font-size: 25px;
+      letter-spacing: 0.5px;
+      color: var(--site-primary-color-dark);
+      font-weight: var(--site-primary-font-bold);
+      padding: 15px;
+      text-align: center;
+      flex-grow: 1; }
+      .region-kassel-land .product-detail-data-info .product-detal-labeled-info > .main-wrap div:first-child {
+        border-left: 0px; }
+
+.region-kassel-land .data-table {
+  width: 100%; }
+  .region-kassel-land .data-table td {
+    border-bottom: 1px solid var(--site-primary-color-light);
+    font-size: 18px;
+    letter-spacing: 0.36;
+    padding: 20px 0;
+    line-height: normal;
+    color: var(--site-primary-color-dark); }
+    .region-kassel-land .data-table td.opech-text {
+      opacity: 0.55; }
+
+.region-kassel-land .deafult-card-content {
+  padding: 50px 50px 80px 50px;
+  background-color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+  .region-kassel-land .deafult-card-content .default-card-header {
+    border-bottom: 1px solid var(--site-primary-color-light);
+    padding-bottom: 30px;
+    margin-bottom: 30px; }
+  .region-kassel-land .deafult-card-content .default-card-table table {
+    border: 0px;
+    width: 100%; }
+  .region-kassel-land .deafult-card-content .default-card-table tr:last-child td {
+    padding-bottom: 0px; }
+  .region-kassel-land .deafult-card-content .default-card-table td {
+    padding: 0 32px 35px 32px; }
+    .region-kassel-land .deafult-card-content .default-card-table td:last-child {
+      padding-right: 0px; }
+    .region-kassel-land .deafult-card-content .default-card-table td:first-child {
+      padding-left: 0px;
+      min-width: 250px; }
 
 .region-kassel-land footer.footer .footer-copyright {
   padding-top: 25px;
