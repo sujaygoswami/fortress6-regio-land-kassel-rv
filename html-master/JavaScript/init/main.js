@@ -111,7 +111,8 @@ jQuery( window ).on( "orientationchange", function( event ) {
 
 // page banner slider
 jQuery('.page-banner-module .banner-slider:not(.no-slider)').slick({
-  
+  dots: true,
+  arrows: false
 });
 
 // custom-serial-listing-module
@@ -193,7 +194,8 @@ jQuery('.touch .has-submenu > a').addClass('dual-click');
  jQuery('.go-top').click(function(){
    jQuery('html, body').animate({scrollTop: 0}, 400);
   
-});      
+});
+
 
 
 });
@@ -208,7 +210,15 @@ jQuery('.touch .has-submenu > a').addClass('dual-click');
 // load
 jQuery(window).load(function(){
 
+// iconic content isotop
+jQuery('.iconic-content-masonry-isotpe-module .the-isotope').isotope({
+  itemSelector: '.isotope-item'
+});
 
+// bild content isotop
+jQuery('.image-content-masonry-isotpe-module .the-isotope').isotope({
+  itemSelector: '.isotope-item'
+});
 
 
 // match height
