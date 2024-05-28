@@ -198,6 +198,52 @@ jQuery('.touch .has-submenu > a').addClass('dual-click');
 
 
 
+// filter slider
+jQuery('.filter-slider-module').each(function(){
+
+  var SLIDER = jQuery(this).find('.slider');
+  var PARENTTHIS = jQuery(this);
+
+  
+
+
+  jQuery(SLIDER).slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: true,
+    infinite: false
+  });
+
+  jQuery(this).find('.slider li').each(function(){
+    var DATACLASS = jQuery(this).attr('data-class');
+    jQuery(this).parents('.slick-slide').addClass(DATACLASS);
+  });
+
+
+
+
+
+  jQuery(this).find('.filter li').on('click', function(e){
+    jQuery(PARENTTHIS).find('.filter li').removeClass('active');
+    jQuery(this).addClass('active');
+    var DATAFILTER = jQuery(this).attr('data-filter');
+    jQuery(SLIDER).slick('slickUnfilter');
+    if(DATAFILTER != 'all'){
+      jQuery(SLIDER).slick('slickFilter',"." + DATAFILTER);
+    }
+    e.stopPropagation();
+  
+    
+  });
+
+});
+
+
+
+
+
+
 });
 
 
@@ -229,6 +275,8 @@ jQuery('.image-content-masonry-isotpe-module .the-isotope').isotope({
   jQuery('.element-row').each(function() {
        jQuery(this).children('.equal-block').matchHeight();
   });
+
+  jQuery('.filter-main-body').matchHeight();
 
 
 
