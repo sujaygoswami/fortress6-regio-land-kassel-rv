@@ -1,6 +1,9 @@
 .region-kassel-land {
 
     // basic
+    .d-inline-grid{
+        display: inline-grid;
+    }
     img{
         &.full-width{
             width: 100%;
@@ -19,50 +22,65 @@
     }
     .default-row{
        row-gap: $grid-gutter-width / 2;
-    }
-    .default-plus-row{
-        margin-left: -45px;
-        margin-right: -45px;
-        row-gap: 45px;
 
-        & > .my-col{
-            padding-left: 45px;
-            padding-right: 45px;
+       &.default-plus-row{
+
+            @media screen and (min-width: $xxl) {
+                margin-left: -45px;
+                margin-right: -45px;
+                row-gap: 45px;
+
+                & > .my-col{
+                    padding-left: 45px;
+                    padding-right: 45px;
+                }
+
+            }            
+
+        
         }
-    }
-    .sm-row{
-        margin-left: -20px;
-        margin-right: -20px;
-        row-gap: 40px;
-        &.row-gap-half{
+
+        &.sm-row{
+            margin-left: -20px;
+            margin-right: -20px;
+            row-gap: 40px;
+            &.row-gap-half{
+                row-gap: 20px;
+            }
+    
+            & > .my-col{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+        &.sm-row-plus{
+            @media screen and (min-width: $xxl) {
+                margin-left: -25px;
+                margin-right: -25px;
+                row-gap: 50px;
+    
+                & > .my-col{
+                    padding-left: 25px;
+                    padding-right: 25px;
+                }
+            }
+        }
+        &.tiny-row{
+            margin-left: -10px;
+            margin-right: -10px;
             row-gap: 20px;
-        }
-
-        & > .my-col{
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-    }
-    .sm-row-plus{
-        margin-left: -25px;
-        margin-right: -25px;
-        row-gap: 50px;
-
-        & > .my-col{
-            padding-left: 25px;
-            padding-right: 25px;
+    
+            & > .my-col{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
         }
     }
-    .tiny-row{
-        margin-left: -10px;
-        margin-right: -10px;
-        row-gap: 20px;
-
-        & > .my-col{
-            padding-left: 10px;
-            padding-right: 10px;
-        }
-    }
+    
+    
+    
+    
     .my-col{
         &.has-column-border{
             border-left: 1px solid var(--site-primary-color-light);
@@ -93,21 +111,31 @@
     }
     .inset-container{
         &.type-1{
-            padding-left: 60px;
-            padding-right: 60px;
 
-            .nested-inset-container{
-                padding-left: 88px;
-                padding-right: 88px;
+            @media screen and (min-width: $xxl) {
+                padding-left: 60px;
+                padding-right: 60px;
+
+                .nested-inset-container{
+                    padding-left: 88px;
+                    padding-right: 88px;
+                }
             }
+            
+
+            
         }
 
         &.type-2{
-            max-width: 1260px / 1660px * 100%;
+            @media screen and (min-width: $xxl) {
+                max-width: 1260px / 1660px * 100%;
+            }
         }
 
         &.type-3{
-            max-width: 1364px / 1660px * 100%;
+            @media screen and (min-width: $xxl) {
+                max-width: 1364px / 1660px * 100%;
+            }
         }
     }
 
@@ -551,12 +579,17 @@
     // iconic-interactive-content-module
     .iconic-interactive-content-module{
         & > .main-wrap{
-            width: 1218px;
             display: flex;
-            column-gap: 140px;
+            column-gap: 120px;
             background-image: url(../Images/iconic-content-curve.svg);
             background-repeat: no-repeat;
             background-position: center center;
+            justify-content: center;
+
+            @media screen and (min-width: $xxl) {
+                width: 1218px;
+                column-gap: 140px;
+            }
 
             .item{
                 width: 200px;
@@ -967,10 +1000,16 @@
             border-bottom: 1px solid var(--site-primary-color-light);
             font-size: 18px;
             letter-spacing: 0.36;
-            padding: 20px 0;
+            padding: 20px;
             line-height: normal;
             color: var(--site-primary-color-dark);
 
+            &:first-child{
+                padding-left: 0px;
+            }
+            &:last-child{
+                padding-right: 0px;
+            }
             &.opech-text{
                 opacity: 0.55;
             }
@@ -1352,8 +1391,13 @@
             margin: 0 0 45px 0;
             padding: 0 83px;
             display: flex;
-            column-gap: 30px;
-            row-gap: 30px;
+            column-gap: 20px;
+            row-gap: 20px;
+
+            @media screen and (min-width: $xxl) {
+                column-gap: 30px;
+                row-gap: 30px;
+            }
 
             li{
                 cursor: pointer;

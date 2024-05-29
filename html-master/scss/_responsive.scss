@@ -1,0 +1,28 @@
+// from xxl to rest
+@media screen and (max-width: ($xxl - 1px)){
+    .back-module{
+        &.pos-type-1{
+            & + .inset-container{
+                padding-left: 70px;
+            }
+        }
+    }
+    .container{
+        max-width: 100% !important;
+    }
+
+    .row{
+        &.my-row{
+            &.default-row:not(.tiny-row){
+                margin-left: -20px;
+                margin-right: -20px;
+                row-gap: 40px;
+
+                & > .my-col{
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+}
