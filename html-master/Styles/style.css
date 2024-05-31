@@ -8185,50 +8185,67 @@ html, body {
   z-index: 50;
   height: 116px; }
   .region-kassel-land header.header .site-logo {
-    width: 211px;
-    height: 114px;
     background-color: white;
-    -webkit-border-radius: 0 0 20px 20px;
-    -moz-border-radius: 0 0 20px 20px;
-    -ms-border-radius: 0 0 20px 20px;
-    border-radius: 0 0 20px 20px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    -ms-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
     text-align: center;
     display: grid;
-    align-items: center; }
+    align-items: center;
+    padding: 15px; }
+    .region-kassel-land header.header .site-logo > img {
+      max-width: 100px; }
+    @media screen and (min-width: 1280px) {
+      .region-kassel-land header.header .site-logo {
+        width: 211px;
+        height: 114px;
+        -webkit-border-radius: 0 0 20px 20px;
+        -moz-border-radius: 0 0 20px 20px;
+        -ms-border-radius: 0 0 20px 20px;
+        border-radius: 0 0 20px 20px;
+        padding: 0px; }
+        .region-kassel-land header.header .site-logo > img {
+          max-width: inherit; } }
     .region-kassel-land header.header .site-logo img {
       margin: 0 auto;
       display: inline-block; }
-  .region-kassel-land header.header .header-nav .main-nav {
-    height: 74px;
-    -webkit-border-radius: 37px;
-    -moz-border-radius: 37px;
-    -ms-border-radius: 37px;
-    border-radius: 37px;
-    background-color: white;
-    display: grid;
-    align-items: center;
-    padding: 0 57px; }
-    .region-kassel-land header.header .header-nav .main-nav ul {
-      list-style: none;
-      margin: 0px;
-      padding: 0px;
-      display: flex;
-      column-gap: 50px; }
-      .region-kassel-land header.header .header-nav .main-nav ul li {
+  .region-kassel-land header.header .header-nav {
+    display: none; }
+    @media screen and (min-width: 1280px) {
+      .region-kassel-land header.header .header-nav {
+        display: block; } }
+    .region-kassel-land header.header .header-nav .main-nav {
+      height: 74px;
+      -webkit-border-radius: 37px;
+      -moz-border-radius: 37px;
+      -ms-border-radius: 37px;
+      border-radius: 37px;
+      background-color: white;
+      display: grid;
+      align-items: center;
+      padding: 0 57px; }
+      .region-kassel-land header.header .header-nav .main-nav ul {
+        list-style: none;
         margin: 0px;
         padding: 0px;
-        font-size: 18px;
-        letter-spacing: 0.9px;
-        color: var(--site-primary-color-dark);
-        font-weight: var(--site-primary-font-bold);
-        -webkit-transition: all 0.3s ease 0s;
-        transition: all 0.3s ease 0s; }
-        .region-kassel-land header.header .header-nav .main-nav ul li.inactive {
-          opacity: 0.45; }
-          .region-kassel-land header.header .header-nav .main-nav ul li.inactive:hover {
-            opacity: 1; }
-        .region-kassel-land header.header .header-nav .main-nav ul li a {
-          color: var(--site-primary-color-dark); }
+        display: flex;
+        column-gap: 50px; }
+        .region-kassel-land header.header .header-nav .main-nav ul li {
+          margin: 0px;
+          padding: 0px;
+          font-size: 18px;
+          letter-spacing: 0.9px;
+          color: var(--site-primary-color-dark);
+          font-weight: var(--site-primary-font-bold);
+          -webkit-transition: all 0.3s ease 0s;
+          transition: all 0.3s ease 0s; }
+          .region-kassel-land header.header .header-nav .main-nav ul li.inactive {
+            opacity: 0.45; }
+            .region-kassel-land header.header .header-nav .main-nav ul li.inactive:hover {
+              opacity: 1; }
+          .region-kassel-land header.header .header-nav .main-nav ul li a {
+            color: var(--site-primary-color-dark); }
 
 .region-kassel-land .d-inline-grid {
   display: inline-grid; }
@@ -8257,15 +8274,16 @@ html, body {
       .region-kassel-land .default-row.default-plus-row > .my-col {
         padding-left: 45px;
         padding-right: 45px; } }
-  .region-kassel-land .default-row.sm-row {
-    margin-left: -20px;
-    margin-right: -20px;
-    row-gap: 40px; }
-    .region-kassel-land .default-row.sm-row.row-gap-half {
-      row-gap: 20px; }
-    .region-kassel-land .default-row.sm-row > .my-col {
-      padding-left: 20px;
-      padding-right: 20px; }
+  @media screen and (min-width: 1800px) {
+    .region-kassel-land .default-row.sm-row {
+      margin-left: -20px;
+      margin-right: -20px;
+      row-gap: 40px; }
+      .region-kassel-land .default-row.sm-row.row-gap-half {
+        row-gap: 20px; }
+      .region-kassel-land .default-row.sm-row > .my-col {
+        padding-left: 20px;
+        padding-right: 20px; } }
   @media screen and (min-width: 1800px) {
     .region-kassel-land .default-row.sm-row-plus {
       margin-left: -25px;
@@ -8286,17 +8304,31 @@ html, body {
   border-left: 1px solid var(--site-primary-color-light); }
   .region-kassel-land .my-col.has-column-border:first-child {
     border-left: 0px; }
+  @media screen and (max-width: 1279px) {
+    .region-kassel-land .my-col.has-column-border.type-4-column-v1:nth-child(3) {
+      border-left: 0px; } }
 
 .region-kassel-land .mb-default {
-  margin-bottom: 40px; }
+  margin-bottom: 15px; }
+  @media screen and (min-width: 1280px) {
+    .region-kassel-land .mb-default {
+      margin-bottom: 40px; } }
 
 .region-kassel-land .x-padding-default {
-  padding-left: 40px;
-  padding-right: 40px; }
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media screen and (min-width: 1280px) {
+    .region-kassel-land .x-padding-default {
+      padding-left: 40px;
+      padding-right: 40px; } }
 
 .region-kassel-land .y-padding-default {
-  padding-top: 40px;
-  padding-bottom: 40px; }
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  @media screen and (min-width: 1280px) {
+    .region-kassel-land .y-padding-default {
+      padding-top: 40px;
+      padding-bottom: 40px; } }
 
 .region-kassel-land .column-top-shift-type-1 {
   padding-top: 85px; }
@@ -8341,36 +8373,35 @@ html, body {
 .region-kassel-land .site-bg-primary {
   background-color: var(--site-primary-color); }
 
-.region-kassel-land .element-gap.element-gap-sm {
-  margin-bottom: 25px; }
-
-.region-kassel-land .element-gap.element-gap-default {
-  margin-bottom: 40px; }
-
-.region-kassel-land .element-gap.element-gap-medium {
-  margin-bottom: 50px; }
-
-.region-kassel-land .element-gap.element-gap-medium-plus {
-  margin-bottom: 70px; }
-
-.region-kassel-land .element-gap.element-gap-lg {
-  margin-bottom: 95px; }
-
-.region-kassel-land .element-gap.element-gap-lg-plus {
-  margin-bottom: 110px; }
-
-.region-kassel-land .element-gap.element-gap-extreme-lg {
-  margin-bottom: 170px; }
-
-.region-kassel-land .element-gap.element-gap-extra-large {
-  margin-bottom: 200; }
-
-.region-kassel-land .element-gap:last-child {
-  margin-bottom: 0px !important; }
+.region-kassel-land .element-gap {
+  margin-bottom: 30px; }
+  .region-kassel-land .element-gap.element-gap-sm {
+    margin-bottom: 25px; }
+  .region-kassel-land .element-gap.element-gap-default {
+    margin-bottom: 40px; }
+  @media screen and (min-width: 1280px) {
+    .region-kassel-land .element-gap.element-gap-medium {
+      margin-bottom: 50px; }
+    .region-kassel-land .element-gap.element-gap-medium-plus {
+      margin-bottom: 70px; }
+    .region-kassel-land .element-gap.element-gap-lg {
+      margin-bottom: 95px; }
+    .region-kassel-land .element-gap.element-gap-lg-plus {
+      margin-bottom: 110px; }
+    .region-kassel-land .element-gap.element-gap-extreme-lg {
+      margin-bottom: 170px; }
+    .region-kassel-land .element-gap.element-gap-extra-large {
+      margin-bottom: 200; } }
+  .region-kassel-land .element-gap:last-child {
+    margin-bottom: 0px !important; }
 
 .region-kassel-land .section-top-bottom-pad-lg {
-  padding-top: 205px;
-  padding-bottom: 275px; }
+  padding-top: 200px;
+  padding-bottom: 200px; }
+  @media screen and (min-width: 1280px) {
+    .region-kassel-land .section-top-bottom-pad-lg {
+      padding-top: 205px;
+      padding-bottom: 275px; } }
 
 .region-kassel-land .section-top-bottom-pad-lg-type-two {
   padding-top: 205px;
@@ -8402,12 +8433,12 @@ html, body {
   background-size: contain; }
 
 .region-kassel-land .site-btn {
-  padding: 19px 30px;
+  padding: 10px 20px;
   -webkit-border-radius: 42px !important;
   -moz-border-radius: 42px !important;
   -ms-border-radius: 42px !important;
   border-radius: 42px !important;
-  font-size: 18px;
+  font-size: 14px;
   line-height: normal;
   letter-spacing: 0.9px;
   font-weight: var(--site-primary-font-bold);
@@ -8417,6 +8448,10 @@ html, body {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   display: inline-block; }
+  @media screen and (min-width: 1280px) {
+    .region-kassel-land .site-btn {
+      font-size: 18px;
+      padding: 19px 30px; } }
   .region-kassel-land .site-btn.min-width-type-1 {
     min-width: 135px;
     text-align: center; }
@@ -8466,35 +8501,63 @@ html, body {
   color: var(--site-primary-color-dark); }
 
 .region-kassel-land h1, .region-kassel-land .h1 {
-  font-size: 70px;
-  line-height: 84px; }
+  font-size: 40px;
+  line-height: normal; }
+  @media screen and (min-width: 1280px) {
+    .region-kassel-land h1, .region-kassel-land .h1 {
+      font-size: 70px;
+      line-height: 84px; } }
 
 .region-kassel-land h2, .region-kassel-land .h2 {
-  font-size: 55px;
-  line-height: 66px; }
+  font-size: 35px;
+  line-height: normal; }
+  @media screen and (min-width: 1280px) {
+    .region-kassel-land h2, .region-kassel-land .h2 {
+      font-size: 55px;
+      line-height: 66px; } }
 
 .region-kassel-land h3, .region-kassel-land .h3 {
-  font-size: 50px;
-  line-height: 60px; }
+  font-size: 30px;
+  line-height: normal; }
+  @media screen and (min-width: 1280px) {
+    .region-kassel-land h3, .region-kassel-land .h3 {
+      font-size: 50px;
+      line-height: 60px; } }
 
 .region-kassel-land h4, .region-kassel-land .h4 {
-  font-size: 40px;
-  line-height: 50px; }
+  font-size: 25px;
+  line-height: normal; }
+  @media screen and (min-width: 1280px) {
+    .region-kassel-land h4, .region-kassel-land .h4 {
+      font-size: 40px;
+      line-height: 50px; } }
 
 .region-kassel-land h5, .region-kassel-land .h5 {
-  font-size: 32px;
-  line-height: 45px;
-  letter-spacing: 0.6px; }
+  font-size: 20px;
+  line-height: normal; }
+  @media screen and (min-width: 1280px) {
+    .region-kassel-land h5, .region-kassel-land .h5 {
+      font-size: 32px;
+      line-height: 45px; } }
 
 .region-kassel-land h6, .region-kassel-land .h6, .region-kassel-land .site-accordion .accordion-button {
-  font-size: 24px;
-  line-height: 32px; }
+  font-size: 16px;
+  line-height: normal; }
+  @media screen and (min-width: 1280px) {
+    .region-kassel-land h6, .region-kassel-land .h6, .region-kassel-land .site-accordion .accordion-button {
+      font-size: 24px;
+      line-height: 32px; } }
 
 .region-kassel-land p {
-  font-size: 18px;
-  line-height: 35px;
+  font-size: 14px;
+  line-height: 25px;
   letter-spacing: 0.36px;
-  margin-bottom: 20px; }
+  margin-bottom: 15px; }
+  @media screen and (min-width: 1280px) {
+    .region-kassel-land p {
+      font-size: 18px;
+      line-height: 35px;
+      margin-bottom: 20px; } }
   .region-kassel-land p + p .site-btn {
     margin-top: 20px; }
   .region-kassel-land p.subline {
@@ -8511,6 +8574,17 @@ html, body {
     line-height: 40px;
     letter-spacing: 0.5px;
     font-family: var(--site-primary-font-medium); }
+
+.region-kassel-land .basic-entry li {
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.36px;
+  margin-bottom: 15px; }
+  @media screen and (min-width: 1280px) {
+    .region-kassel-land .basic-entry li {
+      font-size: 18px;
+      line-height: 35px;
+      margin-bottom: 20px; } }
 
 .region-kassel-land .has-page-banner-viewport-height-type-1 + section {
   margin-top: -70px; }
@@ -8554,10 +8628,11 @@ html, body {
     align-items: center; }
     .region-kassel-land .page-banner-module .slider-context .normal-text-element-module {
       padding: 40px 0; }
-  .region-kassel-land .page-banner-module .banner-content-part .page-banner-single-search-form {
-    max-width: 73.50649%; }
-    .region-kassel-land .page-banner-module .banner-content-part .page-banner-single-search-form.width-type-2 {
-      max-width: 100%; }
+  @media screen and (min-width: 1280px) {
+    .region-kassel-land .page-banner-module .banner-content-part .page-banner-single-search-form {
+      max-width: 73.50649%; } }
+  .region-kassel-land .page-banner-module .banner-content-part .page-banner-single-search-form.width-type-2 {
+    max-width: 100%; }
   .region-kassel-land .page-banner-module .banner-content-part.pos-type-1 {
     position: absolute;
     width: 100%;
@@ -8600,10 +8675,20 @@ html, body {
   padding: 22px 35px 22px 45px;
   display: flex;
   align-items: center; }
+  @media screen and (max-width: 1279px) {
+    .region-kassel-land .page-banner-single-search-form .main-search-form {
+      flex-wrap: wrap; } }
   .region-kassel-land .page-banner-single-search-form .main-search-form .field-holder {
-    width: 80%; }
+    width: 100%; }
+    @media screen and (min-width: 1280px) {
+      .region-kassel-land .page-banner-single-search-form .main-search-form .field-holder {
+        width: 80%; } }
   .region-kassel-land .page-banner-single-search-form .main-search-form .button-holder {
-    margin-left: auto; }
+    margin-top: 15px; }
+    @media screen and (min-width: 1280px) {
+      .region-kassel-land .page-banner-single-search-form .main-search-form .button-holder {
+        margin-left: auto;
+        margin-top: 0px; } }
   .region-kassel-land .page-banner-single-search-form .main-search-form label {
     font-size: 18px;
     line-height: normal;
@@ -8628,17 +8713,23 @@ html, body {
   margin: 0px;
   padding: 0px; }
   .region-kassel-land .custom-serial-listing-module ul li {
-    margin: 0 0 70px 0;
-    padding: 0 0 0 120px;
-    position: relative; }
+    margin: 0 0 30px 0;
+    padding: 0 0 0 70px;
+    position: relative;
+    min-height: 50px; }
+    @media screen and (min-width: 1280px) {
+      .region-kassel-land .custom-serial-listing-module ul li {
+        min-height: 80px;
+        margin-bottom: 70px;
+        padding-left: 120px; } }
     .region-kassel-land .custom-serial-listing-module ul li:last-child {
       margin-bottom: 0px; }
     .region-kassel-land .custom-serial-listing-module ul li span {
       position: absolute;
-      width: 80px;
-      height: 80px;
+      width: 50px;
+      height: 50px;
       text-align: center;
-      line-height: 80px;
+      line-height: 50px;
       color: var(--site-primary-color-light);
       background-color: var(--site-primary-color-dark);
       -webkit-border-radius: 100%;
@@ -8647,8 +8738,14 @@ html, body {
       border-radius: 100%;
       left: 0px;
       top: 0px;
-      font-size: 50px;
+      font-size: 30px;
       font-weight: var(--site-primary-font-bold); }
+      @media screen and (min-width: 1280px) {
+        .region-kassel-land .custom-serial-listing-module ul li span {
+          width: 80px;
+          height: 80px;
+          line-height: 80px;
+          font-size: 50px; } }
 
 .region-kassel-land .iconic-interactive-content-module > .main-wrap {
   display: flex;
@@ -8657,6 +8754,14 @@ html, body {
   background-repeat: no-repeat;
   background-position: center center;
   justify-content: center; }
+  @media screen and (max-width: 1799px) {
+    .region-kassel-land .iconic-interactive-content-module > .main-wrap {
+      flex-direction: column;
+      row-gap: 70px;
+      background-image: url(../Images/iconic-content-curve-portrait.svg); }
+      .region-kassel-land .iconic-interactive-content-module > .main-wrap > .item {
+        margin-left: auto;
+        margin-right: auto; } }
   @media screen and (min-width: 1800px) {
     .region-kassel-land .iconic-interactive-content-module > .main-wrap {
       width: 1218px;
@@ -9284,6 +9389,16 @@ html, body {
         border-color: var(--site-secondary-color);
         color: var(--site-primary-color-dark); }
 
+@media screen and (max-width: 1279px) {
+  .region-kassel-land footer.footer .footer-menu-wrap > .row {
+    flex-wrap: wrap; }
+    .region-kassel-land footer.footer .footer-menu-wrap > .row > .my-col {
+      width: 50%;
+      flex: inherit; } }
+    @media screen and (max-width: 1279px) and (max-width: 767px) {
+      .region-kassel-land footer.footer .footer-menu-wrap > .row > .my-col {
+        width: 100%; } }
+
 .region-kassel-land footer.footer .footer-copyright {
   padding-top: 25px;
   border-top: 1px solid; }
@@ -9339,20 +9454,31 @@ html, body {
   .region-kassel-land footer.footer .footer-social > div i {
     font-style: normal;
     font-weight: var(--site-primary-font-bold);
-    font-size: 22px; }
+    font-size: 16px; }
+    @media screen and (min-width: 1280px) {
+      .region-kassel-land footer.footer .footer-social > div i {
+        font-size: 22px; } }
 
 @media screen and (max-width: 1799px) {
   .back-module.pos-type-1 + .inset-container {
     padding-left: 70px; }
-  .container {
-    max-width: 100% !important; }
+  .container,
+  .container-fluid,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl,
+  .container-xxl {
+    max-width: 100% !important;
+    padding-left: 15px;
+    padding-right: 15px; }
   .row.my-row.default-row:not(.tiny-row) {
-    margin-left: -20px;
-    margin-right: -20px;
-    row-gap: 40px; }
+    margin-left: -15px;
+    margin-right: -15px;
+    row-gap: 30px; }
     .row.my-row.default-row:not(.tiny-row) > .my-col {
-      padding-left: 20px;
-      padding-right: 20px; } }
+      padding-left: 15px;
+      padding-right: 15px; } }
 
 /*! Vendor */
 /*!

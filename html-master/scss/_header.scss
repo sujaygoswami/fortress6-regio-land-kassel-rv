@@ -9,13 +9,28 @@
         height: 116px;
 
         .site-logo{
-            width: 211px;
-            height: 114px;
+            
             background-color: white;
-            @include border-radius(0 0 20px 20px);
+            @include border-radius(0 0 10px 10px);
             text-align: center;
             display: grid;
             align-items: center;
+            padding: 15px;
+
+            & > img{
+                max-width: 100px;
+            }
+
+            @media screen and (min-width: $xl) {
+                width: 211px;
+                height: 114px;
+                @include border-radius(0 0 20px 20px);
+                padding: 0px;
+
+                & > img{
+                    max-width: inherit;
+                }
+            }
 
             img{
                 margin: 0 auto;
@@ -24,6 +39,10 @@
         }
 
         .header-nav{
+            display: none;
+            @media screen and (min-width: $xl) {
+                display: block;
+            }
             .main-nav{
                 height: 74px;
                 @include border-radius(37px);
