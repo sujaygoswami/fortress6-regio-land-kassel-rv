@@ -36,13 +36,30 @@
                     <!-- nav column -->
                     <div class="col-auto my-col header-nav ms-auto">
                         <div class="main-wrap">
-                            <div class="main-nav">
+                            <!-- desktop nav -->
+                            <div class="main-nav d-none d-xl-grid desktop-nav">
                                 <ul>
                                     <li><a href="#">Gewerbeflächen</a></li>
                                     <li><a href="#">Gemeinden</a></li>
                                     <li><a href="#">Förderung</a></li>
                                 </ul>
                             </div>
+                            <!-- desktop nav -->
+
+                            <!-- mobile nav -->
+                            <div class="mobile-nav d-block d-xl-none">
+                                <div class="dropdown">
+                                    <button class="btn btn-light dropdown-toggle mobile-hmbg" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="fa fa-bars"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                      <li><a class="dropdown-item" href="#">Gewerbeflächen</a></li>
+                                      <li class="inactive"><a class="dropdown-item" href="#">Gemeinden</a></li>
+                                      <li class="inactive"><a class="dropdown-item" href="#">Förderung</a></li>
+                                    </ul>
+                                  </div>
+                            </div>
+                            <!-- mobile nav -->
                         </div>
                     </div>
                     <!-- nav column -->
@@ -184,7 +201,7 @@
         </section>
         <!-- section -->
         <!-- section -->
-        <section class="section-row section-top-bottom-pad-normal clearfix">
+        <section class="section-row responsive-section-row-default section-top-bottom-pad-normal clearfix">
             <div class="container">
                 <div class="inset-container type-1 mx-auto">
                     <!-- grid -->
@@ -511,6 +528,7 @@
 
 
     <!-- build:vendorjs -->
+    <script src="JavaScript/lib/popper.min.js"></script>
     <script src="JavaScript/lib/bootstrap.js"></script>
     <script src="JavaScript/lib/jquery.matchHeight-min.js"></script>
     <script src="JavaScript/lib/slick.js"></script>

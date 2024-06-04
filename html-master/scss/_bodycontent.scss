@@ -459,6 +459,10 @@
     .has-page-banner-viewport-height-type-2{
         & + section{
             margin-top: -130px;
+
+            @media screen and (max-height: 999px) and (min-width: $xl) {
+                padding-top: 350px;
+            }
         }
     }
     .has-page-banner-viewport-height-type-4{
@@ -535,6 +539,10 @@
                 width: 100%;
                 left: 0px;
                 bottom: 0px;
+
+                @media screen and (max-height: 999px) and (min-width: $xl) {
+                    bottom: -150px;
+                }
             }
         }
         .main-banner-part{
@@ -544,7 +552,10 @@
                     height: 100%;
 
                     .slick-list, .slick-track, .slick-slide, .slick-slide > div{
-                        height: 100%;
+                        
+                            height: 100%;
+                        
+                        
                     }
 
                     .sliding-part{
@@ -573,6 +584,9 @@
             }
             &.viewport-height-type-2{
                 height: calc(100vh - 130px);
+                @media screen and (max-height: 999px) and (min-width: $xl) {
+                    height: 100vh;
+                }
             }
             &.viewport-height-type-3{
 
@@ -707,7 +721,7 @@
             background-position: center center;
             justify-content: center;
 
-            @media screen and (max-width: ($xxl - 1px)) {
+            @media screen and (max-width: ($xl - 1px)) {
                flex-direction: column;
                row-gap: 70px;
                background-image: url(../Images/iconic-content-curve-portrait.svg);
@@ -772,10 +786,14 @@
         position: fixed;
         z-index: 10;
         cursor: pointer;
-        right: 110px;
-        top: 89vh;
+        right: 30px;
+        bottom: 50px;
         display: flex;
         align-items: center;
+
+        @media screen and (min-width: $xl){
+            right: 110px;
+        }
 
         span{
             display: inline-block;
@@ -831,12 +849,16 @@
                 height: 100%;
                 background-color: transparent;
                 border: none;
-                font-size: 18px;
+                font-size: 16px;
                 letter-spacing: 0.9px;
                 font-weight: var(--site-primary-font-bold);
                 color: var(--site-primary-color-dark);
                 padding: 0 45px 0 24px;
                 cursor: pointer;
+
+                @media screen and (min-width: $xl) {
+                    font-size: 18px;
+                }
             }
         }
 
@@ -945,6 +967,7 @@
         align-items: center;
         column-gap: 23px;
         row-gap: 23px;
+        flex-wrap: wrap;
 
         &.color-view-2{
             span{
@@ -967,13 +990,17 @@
         span{
             @include border-radius(82px);
             background-color: var(--site-primary-color-light);
-            font-size: 18px;
+            font-size: 16px;
             line-height: normal;
             letter-spacing: 0.36px;
             color: var(--site-primary-color-dark);
             text-align: center;
             padding: 10px 20px;
             min-width: 104px;
+
+            @media screen and (min-width: $xl) {
+                font-size: 18px;
+            }
         }
     }
     // listing module

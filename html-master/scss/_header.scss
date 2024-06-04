@@ -8,6 +8,31 @@
         z-index: 50;
         height: 116px;
 
+        .mobile-nav{
+            .dropdown-menu.show{
+                transform: none !important;
+                inset: auto !important;
+                right: 0px !important;
+            }
+            li{
+            
+                &.inactive{
+                    & > a{
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+
+        .mobile-nav{
+            .mobile-hmbg{
+                color: var(--site-primary-color-dark);
+                &::after{
+                    display: none;
+                }
+            }
+        }
+
         .site-logo{
             
             background-color: white;
@@ -39,10 +64,7 @@
         }
 
         .header-nav{
-            display: none;
-            @media screen and (min-width: $xl) {
-                display: block;
-            }
+           
             .main-nav{
                 height: 74px;
                 @include border-radius(37px);

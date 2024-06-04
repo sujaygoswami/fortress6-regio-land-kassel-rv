@@ -21,38 +21,53 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- header -->
-    <header class="header my-main-include-row">
-        <div class="header-main-wrap">
-            <div class="container">
-                <div class="row my-row default-row flex-grid-v-bottom">
-                    <!-- logo column -->
-                    <div class="col-auto my-col header-logo">
-                        <div class="main-wrap">
-                            <a href="index.html">
-                                <div class="site-logo"><img src="Images/header-logo.svg"></div>
-                            </a>
-                        </div>
+   <!-- header -->
+   <header class="header my-main-include-row">
+    <div class="header-main-wrap">
+        <div class="container">
+            <div class="row my-row default-row flex-grid-v-bottom">
+                <!-- logo column -->
+                <div class="col-auto my-col header-logo">
+                    <div class="main-wrap">
+                        <a href="index.html"><div class="site-logo"><img src="Images/header-logo.svg"></div></a>
                     </div>
-                    <!-- logo column -->
-                    <!-- nav column -->
-                    <div class="col-auto my-col header-nav ms-auto">
-                        <div class="main-wrap">
-                            <div class="main-nav">
-                                <ul>
-                                    <li class="active"><a href="#">Gewerbeflächen</a></li>
-                                    <li class="inactive"><a href="#">Gemeinden</a></li>
-                                    <li class="inactive"><a href="#">Förderung</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- nav column -->
                 </div>
+                <!-- logo column -->
+                <!-- nav column -->
+                <div class="col-auto my-col header-nav ms-auto">
+                    <div class="main-wrap">
+                        <!-- desktop nav -->
+                        <div class="main-nav d-none d-xl-grid desktop-nav">
+                            <ul>
+                                <li><a href="#">Gewerbeflächen</a></li>
+                                <li><a href="#">Gemeinden</a></li>
+                                <li><a href="#">Förderung</a></li>
+                            </ul>
+                        </div>
+                        <!-- desktop nav -->
+
+                        <!-- mobile nav -->
+                        <div class="mobile-nav d-block d-xl-none">
+                            <div class="dropdown">
+                                <button class="btn btn-light dropdown-toggle mobile-hmbg" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <i class="fa fa-bars"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Gewerbeflächen</a></li>
+                                  <li class="inactive"><a class="dropdown-item" href="#">Gemeinden</a></li>
+                                  <li class="inactive"><a class="dropdown-item" href="#">Förderung</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                        <!-- mobile nav -->
+                    </div>
+                </div>
+                <!-- nav column -->
             </div>
         </div>
-    </header>
-    <!-- header -->
+    </div>
+</header>
+<!-- header -->
 
 
 
@@ -61,7 +76,7 @@
     <main class="my-main-include-row">
 
         <!-- section -->
-        <section class="section-row has-page-banner-viewport-height-type-2 clearfix">
+        <section class="section-row has-page-banner-viewport-height-type-2 clearfix page-banner-with-search-form-responsive-normalize">
             <!-- page banner module -->
             <div class="page-banner-module full-viewport-height">
                 <!-- main banner part -->
@@ -171,7 +186,7 @@
         <!-- section -->
 
         <!-- section -->
-        <section class="section-row section-top-bottom-pad-lg-type-two clearfix">
+        <section class="section-row responsive-section-row-default section-top-bottom-pad-lg-type-two clearfix">
             <div class="container">
                 <div class="inset-container type-2 mx-auto">
 
@@ -194,7 +209,7 @@
                         <div class="two-column-grid element-gap element-gap-medium clearfix">
                             <div class="row my-row default-row flex-grid-v-bottom">
                                 <!-- col -->
-                                <div class="col-auto my-col">
+                                <div class="col-xl-auto col-12 my-col">
                                     <!-- listing view activity -->
                                     <div class="listinig-view-activity">
                                         <div><button type="button" class="site-btn iconic-btn outline-btn sm-btn active min-width-type-1"><i><img src="Images/list-icon-primary-dark.svg" width="18"></i><span>Liste</span></button></div>
@@ -204,7 +219,7 @@
                                 </div>
                                 <!-- col -->
                                 <!-- col -->
-                                <div class="col-auto my-col ms-auto">
+                                <div class="col-xl-auto col-12 my-col ms-auto">
                                     <!-- advance search form -->
                                     <div class="advance-search-form">
                                         <div class="main-wrap">
@@ -238,22 +253,22 @@
                                     <div class="mai-wrap product-listing-card">
                                         <div class="row sm-row default-row my-row">
                                             <!-- col listing image -->
-                                            <div class="col-6 my-col">
+                                            <div class="col-xl-6 col-12 my-col">
                                                 <div class="listing-product-image set-back"><img src="Images/listing-product-img.jpg"></div>
                                             </div>
                                             <!-- col listing image -->
                                             <!-- col listing information -->
-                                            <div class="col-6 my-col">
+                                            <div class="col-xl-6 col-12 my-col">
                                                 <div class="listing-product-information">
 
                                                     <!-- listing header info -->
                                                     <div class="listing-header-info">
                                                         <div class="row sm-row flex-grid-v-center default-row my-row">
-                                                            <div class="col-7 listing-tags my-col">
+                                                            <div class="col-xl-7 col-12 listing-tags my-col">
                                                                 <span>Uslar</span>
                                                                 <span>LK Höxter</span>
                                                             </div>
-                                                            <div class="col-auto client-logo ms-auto my-col">
+                                                            <div class="col-xl-auto col-12 client-logo ms-auto my-col">
                                                                 <img src="Images/product-listing-client-logo-1.svg">
                                                             </div>
                                                         </div>
@@ -288,22 +303,22 @@
                                     <div class="mai-wrap product-listing-card">
                                         <div class="row sm-row default-row my-row">
                                             <!-- col listing image -->
-                                            <div class="col-6 my-col">
+                                            <div class="col-xl-6 col-12 my-col">
                                                 <div class="listing-product-image set-back"><img src="Images/listing-product-img.jpg"></div>
                                             </div>
                                             <!-- col listing image -->
                                             <!-- col listing information -->
-                                            <div class="col-6 my-col">
+                                            <div class="col-xl-6 col-12 my-col">
                                                 <div class="listing-product-information">
 
                                                     <!-- listing header info -->
                                                     <div class="listing-header-info">
                                                         <div class="row sm-row flex-grid-v-center default-row my-row">
-                                                            <div class="col-7 listing-tags my-col">
+                                                            <div class="col-xl-7 col-12 listing-tags my-col">
                                                                 <span>Warburg</span>
                                                                 <span>LK Höxter</span>
                                                             </div>
-                                                            <div class="col-auto client-logo ms-auto my-col">
+                                                            <div class="col-xl-auto col-12 client-logo ms-auto my-col">
                                                                 <img src="Images/product-listing-client-logo-2.svg">
                                                             </div>
                                                         </div>
@@ -353,8 +368,8 @@
     </main>
     <!-- main -->
 
-      <!-- footer -->
-      <footer class="footer my-main-include-row">
+        <!-- footer -->
+    <footer class="footer my-main-include-row">
         <!-- footer secondary -->
         <div class="footer-secondary mb-default x-padding-default">
             <div class="main-wrap">
@@ -364,7 +379,7 @@
                         <div class="two-column-grid clearfix element-gap element-gap-extreme-lg">
                             <div class="row my-row default-row flex-grid-v-center">
                                 <!-- col -->
-                                <div class="col-xxl-3 col-4 my-col">
+                                <div class="col-xxl-3 col-xl-4 col-12 my-col">
                                     <!-- normal-text-element-module -->
                                     <div class="normal-text-element-module basic-entry">
                                         <p class="subline-var-2">UNSERE FÖRDERER</p>
@@ -374,33 +389,33 @@
                                 </div>
                                 <!-- col -->
                                 <!-- col -->
-                                <div class="col-xxl-auto col-8 my-col ms-auto">
+                                <div class="col-xxl-auto col-xl-8 col-12 my-col ms-auto">
                                     <!-- bordered listing column module -->
                                     <div class="bordered-listing-column-module">
                                         <div class="row my-row default-row">
                                             <!-- col -->
-                                            <div class="col-xxl-auto col-3 my-col has-column-border">
+                                            <div class="col-xxl-auto col-xl-3 col-6 my-col has-column-border type-4-column-v1">
                                                 <div class="main-wrap d-grid full-height flex-grid-v-center">
                                                     <a href="#" class="d-inline-grid"><img src="Images/logo-region-gestalten.png" class="mx-auto"></a>
                                                 </div>
                                             </div>
                                             <!-- col -->
                                             <!-- col -->
-                                            <div class="col-xxl-auto col-3 my-col has-column-border">
+                                            <div class="col-xxl-auto col-xl-3 col-6 my-col has-column-border type-4-column-v1">
                                                 <div class="main-wrap d-grid full-height flex-grid-v-center">
                                                     <a href="#" class="d-inline-grid"><img src="Images/Logo_RKL.png" class="mx-auto"></a>
                                                 </div>
                                             </div>
                                             <!-- col -->
                                             <!-- col -->
-                                            <div class="col-xxl-auto col-3 my-col has-column-border">
+                                            <div class="col-xxl-auto col-xl-3 col-6 my-col has-column-border type-4-column-v1">
                                                 <div class="main-wrap d-grid full-height flex-grid-v-center">
                                                     <a href="#" class="d-inline-grid"><img src="Images/logo-region-gestalten.png" class="mx-auto"></a>
                                                 </div>
                                             </div>
                                             <!-- col -->
                                             <!-- col -->
-                                            <div class="col-xxl-auto col-3 my-col has-column-border">
+                                            <div class="col-xxl-auto col-xl-3 col-6 my-col has-column-border type-4-column-v1">
                                                 <div class="main-wrap d-grid full-height flex-grid-v-center">
                                                     <a href="#" class="d-inline-grid"><img src="Images/Logo_RKL.png" class="mx-auto"></a>
                                                 </div>
@@ -442,7 +457,7 @@
                             <div class="two-column-grid clearfix element-gap element-gap-lg-plus">
                                 <div class="row my-row default-row flex-grid-v-center">
                                     <!-- col -->
-                                    <div class="col-7 my-col">
+                                    <div class="col-xl-7 col-12 my-col">
                                         <!-- normal-text-element-module -->
                                         <div class="normal-text-element-module basic-entry site-text-gray">
                                             <p><strong>Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle
@@ -455,7 +470,7 @@
                                     </div>
                                     <!-- col -->
                                     <!-- col -->
-                                    <div class="col-auto my-col ms-auto">
+                                    <div class="col-xl-auto col-12 my-col ms-auto">
                                         <div class="footer-social">
                                             <div><span><img src="Images/mail-icon-gray.svg"></span><i><a
                                                         href="mailto:info@region-kassel-land.de">info@region-kassel-land.de</a></i>
@@ -473,7 +488,7 @@
                             </div>
                             <!-- grid -->
                             <!-- grid -->
-                            <div class="four-column-grid clearfix element-gap element-gap-medium">
+                            <div class="four-column-grid clearfix element-gap element-gap-medium footer-menu-wrap">
                                 <div class="row my-row default-row">
                                     <!-- col -->
                                     <div class="col my-col">
@@ -552,7 +567,10 @@
 
 
 
+
+
     <!-- build:vendorjs -->
+    <script src="JavaScript/lib/popper.min.js"></script>
     <script src="JavaScript/lib/bootstrap.js"></script>
     <script src="JavaScript/lib/jquery.matchHeight-min.js"></script>
     <script src="JavaScript/lib/slick.js"></script>
