@@ -212,7 +212,23 @@ jQuery('.filter-slider-module').each(function(){
     slidesToScroll: 1,
     arrows: true,
     dots: true,
-    infinite: false
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 1279,
+        settings: {
+          slidesToShow: 2,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          dots: false
+        }
+      }
+    ]
   });
 
   jQuery(this).find('.slider li').each(function(){

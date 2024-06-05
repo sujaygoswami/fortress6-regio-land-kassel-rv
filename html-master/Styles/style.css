@@ -8182,8 +8182,7 @@ html, body {
   width: 100%;
   left: 0px;
   top: 0px;
-  z-index: 50;
-  height: 116px; }
+  z-index: 50; }
   .region-kassel-land header.header .mobile-nav .dropdown-menu.show {
     transform: none !important;
     inset: auto !important;
@@ -8931,7 +8930,7 @@ html, body {
   row-gap: 15px; }
 
 .region-kassel-land .product-listing-module .product-listing-card {
-  padding: 27px;
+  padding: 30px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -9054,7 +9053,14 @@ html, body {
   display: flex;
   column-gap: 35px;
   align-items: center;
-  margin-top: 22px; }
+  margin-top: 22px;
+  row-gap: 70px; }
+  @media screen and (max-width: 1279px) {
+    .region-kassel-land .product-detail-slider .custom-pagi {
+      flex-wrap: wrap;
+      row-gap: 40px; }
+      .region-kassel-land .product-detail-slider .custom-pagi .download-expose {
+        width: 100%; } }
 
 .region-kassel-land .product-detail-slider .pagingInfo {
   font-size: 24px;
@@ -9093,18 +9099,25 @@ html, body {
   -ms-border-radius: 15px;
   border-radius: 15px;
   background-color: var(--site-primary-color-light);
-  padding: 16px 0; }
+  padding: 10px 0; }
+  @media screen and (min-width: 1280px) {
+    .region-kassel-land .product-detail-data-info .product-detal-labeled-info {
+      padding: 16px 0; } }
   .region-kassel-land .product-detail-data-info .product-detal-labeled-info > .main-wrap {
     display: flex; }
     .region-kassel-land .product-detail-data-info .product-detal-labeled-info > .main-wrap div {
       border-left: 1px solid #707070;
-      font-size: 25px;
+      font-size: 18px;
       letter-spacing: 0.5px;
       color: var(--site-primary-color-dark);
       font-weight: var(--site-primary-font-bold);
-      padding: 15px;
+      padding: 10px;
       text-align: center;
       flex-grow: 1; }
+      @media screen and (min-width: 1280px) {
+        .region-kassel-land .product-detail-data-info .product-detal-labeled-info > .main-wrap div {
+          padding: 15px;
+          font-size: 25px; } }
       .region-kassel-land .product-detail-data-info .product-detal-labeled-info > .main-wrap div:first-child {
         border-left: 0px; }
 
@@ -9112,11 +9125,15 @@ html, body {
   width: 100%; }
   .region-kassel-land .data-table td {
     border-bottom: 1px solid var(--site-primary-color-light);
-    font-size: 18px;
+    font-size: 14px;
     letter-spacing: 0.36;
     padding: 20px;
     line-height: normal;
-    color: var(--site-primary-color-dark); }
+    color: var(--site-primary-color-dark);
+    vertical-align: top; }
+    @media screen and (min-width: 1280px) {
+      .region-kassel-land .data-table td {
+        font-size: 18px; } }
     .region-kassel-land .data-table td:first-child {
       padding-left: 0px; }
     .region-kassel-land .data-table td:last-child {
@@ -9125,12 +9142,15 @@ html, body {
       opacity: 0.55; }
 
 .region-kassel-land .deafult-card-content {
-  padding: 50px 50px 80px 50px;
+  padding: 30px;
   background-color: white;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   border-radius: 10px; }
+  @media screen and (min-width: 1280px) {
+    .region-kassel-land .deafult-card-content {
+      padding: 50px 50px 80px 50px; } }
   .region-kassel-land .deafult-card-content.pad-type-2 {
     padding: 80px 0 60px 0; }
   .region-kassel-land .deafult-card-content .default-card-header {
@@ -9186,7 +9206,10 @@ html, body {
         vertical-align: middle; }
 
 .region-kassel-land .iconic-content-masonry-isotpe-module .isotope-item {
-  margin-top: 120px; }
+  margin-top: 40px; }
+  @media screen and (min-width: 1280px) {
+    .region-kassel-land .iconic-content-masonry-isotpe-module .isotope-item {
+      margin-top: 120px; } }
   .region-kassel-land .iconic-content-masonry-isotpe-module .isotope-item:first-child {
     margin-top: 0px; }
 
@@ -9215,8 +9238,9 @@ html, body {
   margin-top: 20px; }
   .region-kassel-land .image-content-masonry-isotpe-module .my-col:first-child {
     margin-top: 0px; }
-  .region-kassel-land .image-content-masonry-isotpe-module .my-col:nth-child(2) {
-    margin-top: 120px; }
+  @media screen and (min-width: 768px) {
+    .region-kassel-land .image-content-masonry-isotpe-module .my-col:nth-child(2) {
+      margin-top: 120px; } }
 
 .region-kassel-land .news-detail-banner-header-module {
   position: relative; }
@@ -9305,7 +9329,8 @@ html, body {
     margin-top: 40px;
     text-align: center;
     width: 100%;
-    justify-content: center; }
+    justify-content: center;
+    flex-wrap: wrap; }
     .region-kassel-land .filter-slider-module .slick-dots li {
       margin: 0px;
       padding: 0px; }
@@ -9331,8 +9356,11 @@ html, body {
     background-size: 52.8px;
     background-position: left top;
     position: absolute;
-    top: 50%;
-    margin-top: -16px; }
+    bottom: 0px; }
+    @media screen and (min-width: 1280px) {
+      .region-kassel-land .filter-slider-module .slick-arrow {
+        top: 50%;
+        margin-top: -16px; } }
     .region-kassel-land .filter-slider-module .slick-arrow.slick-disabled {
       pointer-events: none;
       opacity: 0.41; }
@@ -9345,7 +9373,10 @@ html, body {
   .region-kassel-land .filter-slider-module .slider {
     list-style: none;
     margin: 0px;
-    padding: 0 83px; }
+    padding: 0 0 80px 0; }
+    @media screen and (min-width: 1280px) {
+      .region-kassel-land .filter-slider-module .slider {
+        padding: 0 83px; } }
     .region-kassel-land .filter-slider-module .slider li {
       margin: 0px;
       padding: 0px; }
@@ -9383,10 +9414,14 @@ html, body {
   .region-kassel-land .filter-slider-module .filter {
     list-style: none;
     margin: 0 0 45px 0;
-    padding: 0 83px;
+    padding: 0px;
     display: flex;
     column-gap: 20px;
-    row-gap: 20px; }
+    row-gap: 20px;
+    flex-wrap: wrap; }
+    @media screen and (min-width: 1280px) {
+      .region-kassel-land .filter-slider-module .filter {
+        padding: 0 83px; } }
     @media screen and (min-width: 1800px) {
       .region-kassel-land .filter-slider-module .filter {
         column-gap: 30px;
@@ -9412,6 +9447,14 @@ html, body {
         background-color: var(--site-secondary-color);
         border-color: var(--site-secondary-color);
         color: var(--site-primary-color-dark); }
+
+@media screen and (min-width: 1280px) {
+  .region-kassel-land .bordered-listing-column-module.view-2 .my-col:not(.responsive-col-auto-till-xl) {
+    width: inherit;
+    flex: 1 0 0%; }
+  .region-kassel-land .bordered-listing-column-module.view-2 .my-col.responsive-col-auto-till-xl {
+    flex: 0 0 auto;
+    width: auto; } }
 
 @media screen and (max-width: 1279px) {
   .region-kassel-land footer.footer .footer-menu-wrap > .row {
