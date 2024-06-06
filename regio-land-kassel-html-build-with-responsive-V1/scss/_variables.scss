@@ -1,0 +1,46 @@
+// fonts
+:root{
+    --site-primary-font: 'Urbanist';
+    --site-primary-font-bold: bold;
+    --site-primary-font-Extra-bold: bold;
+    --site-primary-font-Semi-bold: 600;
+    --site-primary-font-medium: 500;
+    --site-primary-font-regular: normal; 
+    --site-primary-font-thin: 100;
+    --site-primary-font-Extra-light: 200;
+    --site-primary-font-light: 300;
+    --site-primary-font-black: 900;
+}
+
+
+
+
+
+
+
+
+
+
+// colors
+:root{
+
+    --site-primary-color: #2D7174;
+    --site-primary-color-dark: #08343E;
+    --site-primary-color-light: #D5E0E0;
+    --site-secondary-color: #C8CF1E;
+    --site-default-gray: #F7F7F7;
+    --site-primary-text-color: #2D3337;
+
+}
+
+// grid breakpoints
+
+    $xs: 0;
+    $sm: 576px;
+    $md: 768px;
+    $lg: 1024px;
+    $xl: 1280px;
+    $xxl: 1800px;
+
+
+
