@@ -8668,7 +8668,7 @@ html, body {
     left: 0px;
     bottom: 0px; }
     @media screen and (max-height: 999px) and (min-width: 1280px) {
-      .region-kassel-land .page-banner-module .banner-content-part.pos-type-1 {
+      .region-kassel-land .page-banner-module .banner-content-part.pos-type-1.responsive-view-2 {
         bottom: -150px; } }
   .region-kassel-land .page-banner-module .main-banner-part.has-view-height .banner-slider {
     height: 100%; }

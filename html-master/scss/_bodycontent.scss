@@ -580,9 +580,13 @@
                 left: 0px;
                 bottom: 0px;
 
-                @media screen and (max-height: 999px) and (min-width: $xl) {
-                    bottom: -150px;
+                &.responsive-view-2{
+                    @media screen and (max-height: 999px) and (min-width: $xl) {
+                        bottom: -150px;
+                    }
                 }
+
+               
             }
         }
         .main-banner-part{
