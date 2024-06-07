@@ -1,6 +1,14 @@
 .region-kassel-land {
 
     // basic
+    .back-link{
+        padding-left: 60px;
+        background-image: url(../Images/prev-arrow-primary-dark.svg);
+        background-repeat: no-repeat;
+        background-position: left center;
+        min-height: 27px;
+        background-size: 42px;
+    }
     .d-inline-grid{
         display: inline-grid;
     }
@@ -194,7 +202,7 @@
                 margin-bottom: 95px;
             }
             &.element-gap-lg-plus{
-                margin-bottom: 110px;
+                margin-bottom: 120px;
             }
             &.element-gap-extreme-lg{
                 margin-bottom: 170px;
@@ -239,6 +247,10 @@
     }
     .section-top-bottom-pad-normal-type-4{
         padding-top: 60px;
+        padding-bottom: 170px;
+    }
+    .section-top-bottom-pad-normal-type-5{
+        padding-top: 170px;
         padding-bottom: 170px;
     }
     .section-bg-type-1{
@@ -487,8 +499,27 @@
             margin-top: -165px;
         }
     }
+    .has-page-banner-viewport-height-type-5{
+        & + section{
+            margin-top: -90px;
+        }
+    }
     .page-banner-module{
         position: relative;
+
+        &.design-view-2{
+            .main-banner-part{
+                position: relative;
+
+                .banner-content-part{
+                    height: 100%;
+                    bottom: inherit;
+                    top: 0px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
 
         &.has-news-detail-banner-content{
             @media screen and (max-width: ($xl - 1px)){
@@ -565,6 +596,10 @@
         .banner-content-part{
             .page-banner-single-search-form{
 
+                &.view-2{
+                    max-width: 100%;
+                }
+
                 @media screen and (min-width: $xl) {
                     max-width: 1132px / 1540px * 100%;
                 }
@@ -609,6 +644,10 @@
                             background-position: center top;
                             background-repeat: no-repeat;
 
+                            &.set-back-view-2{
+                                background-position: center bottom;
+                            }
+
                             &.pos-type-2{
                                 background-size: auto;
                                 background-position: right bottom;
@@ -639,6 +678,9 @@
             &.viewport-height-type-4{
                 height: calc(100vh - 165px);
             }
+            &.viewport-height-type-5{
+                height: calc(100vh - 90px);
+            }
         }
 
         
@@ -654,10 +696,14 @@
 
         .main-search-form{
             background-color: white;
-            @include border-radius(82px);
-            padding: 22px 35px 22px 45px;
+            @include border-radius(30px);
+            padding: 30px;
             display: flex;
             align-items: center;
+            @media screen and (min-width: $xl) {
+                @include border-radius(82px);
+                padding: 22px 35px 22px 45px;
+            }
 
             @media screen and (max-width: ($xl - 1px)){
                 flex-wrap: wrap;
@@ -1709,5 +1755,18 @@
         }
     }
     // bordered-listing-column-module
+
+    // page-banner-down-indicator
+    .page-banner-down-indicator{
+        width: 100%;
+        height: 90px;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    // page-banner-down-indicator
 
 }

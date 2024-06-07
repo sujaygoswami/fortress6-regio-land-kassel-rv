@@ -8251,6 +8251,14 @@ html, body {
         .region-kassel-land header.header .header-nav .main-nav ul li a {
           color: var(--site-primary-color-dark); }
 
+.region-kassel-land .back-link {
+  padding-left: 60px;
+  background-image: url(../Images/prev-arrow-primary-dark.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  min-height: 27px;
+  background-size: 42px; }
+
 .region-kassel-land .d-inline-grid {
   display: inline-grid; }
 
@@ -8391,7 +8399,7 @@ html, body {
     .region-kassel-land .element-gap.element-gap-lg {
       margin-bottom: 95px; }
     .region-kassel-land .element-gap.element-gap-lg-plus {
-      margin-bottom: 110px; }
+      margin-bottom: 120px; }
     .region-kassel-land .element-gap.element-gap-extreme-lg {
       margin-bottom: 170px; }
     .region-kassel-land .element-gap.element-gap-extra-large {
@@ -8429,6 +8437,10 @@ html, body {
 
 .region-kassel-land .section-top-bottom-pad-normal-type-4 {
   padding-top: 60px;
+  padding-bottom: 170px; }
+
+.region-kassel-land .section-top-bottom-pad-normal-type-5 {
+  padding-top: 170px;
   padding-bottom: 170px; }
 
 .region-kassel-land .section-bg-type-1 {
@@ -8614,8 +8626,19 @@ html, body {
 .region-kassel-land .has-page-banner-viewport-height-type-4 + section {
   margin-top: -165px; }
 
+.region-kassel-land .has-page-banner-viewport-height-type-5 + section {
+  margin-top: -90px; }
+
 .region-kassel-land .page-banner-module {
   position: relative; }
+  .region-kassel-land .page-banner-module.design-view-2 .main-banner-part {
+    position: relative; }
+    .region-kassel-land .page-banner-module.design-view-2 .main-banner-part .banner-content-part {
+      height: 100%;
+      bottom: inherit;
+      top: 0px;
+      display: flex;
+      align-items: center; }
   @media screen and (max-width: 1279px) {
     .region-kassel-land .page-banner-module.has-news-detail-banner-content .banner-slider .slick-dots {
       margin-top: 0px;
@@ -8657,6 +8680,8 @@ html, body {
     align-items: center; }
     .region-kassel-land .page-banner-module .slider-context .normal-text-element-module {
       padding: 40px 0; }
+  .region-kassel-land .page-banner-module .banner-content-part .page-banner-single-search-form.view-2 {
+    max-width: 100%; }
   @media screen and (min-width: 1280px) {
     .region-kassel-land .page-banner-module .banner-content-part .page-banner-single-search-form {
       max-width: 73.50649%; } }
@@ -8680,6 +8705,8 @@ html, body {
         background-size: cover;
         background-position: center top;
         background-repeat: no-repeat; }
+        .region-kassel-land .page-banner-module .main-banner-part.has-view-height .banner-slider .sliding-part.set-back.set-back-view-2 {
+          background-position: center bottom; }
         .region-kassel-land .page-banner-module .main-banner-part.has-view-height .banner-slider .sliding-part.set-back.pos-type-2 {
           background-size: auto;
           background-position: right bottom; }
@@ -8697,19 +8724,28 @@ html, body {
     height: 100vh; }
   .region-kassel-land .page-banner-module .main-banner-part.viewport-height-type-4 {
     height: calc(100vh - 165px); }
+  .region-kassel-land .page-banner-module .main-banner-part.viewport-height-type-5 {
+    height: calc(100vh - 90px); }
 
 .region-kassel-land .page-banner-single-search-form .module-card {
   padding: 62px 45px; }
 
 .region-kassel-land .page-banner-single-search-form .main-search-form {
   background-color: white;
-  -webkit-border-radius: 82px;
-  -moz-border-radius: 82px;
-  -ms-border-radius: 82px;
-  border-radius: 82px;
-  padding: 22px 35px 22px 45px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px;
+  padding: 30px;
   display: flex;
   align-items: center; }
+  @media screen and (min-width: 1280px) {
+    .region-kassel-land .page-banner-single-search-form .main-search-form {
+      -webkit-border-radius: 82px;
+      -moz-border-radius: 82px;
+      -ms-border-radius: 82px;
+      border-radius: 82px;
+      padding: 22px 35px 22px 45px; } }
   @media screen and (max-width: 1279px) {
     .region-kassel-land .page-banner-single-search-form .main-search-form {
       flex-wrap: wrap; } }
@@ -9487,6 +9523,16 @@ html, body {
   .region-kassel-land .bordered-listing-column-module.view-2 .my-col.responsive-col-auto-till-xl {
     flex: 0 0 auto;
     width: auto; } }
+
+.region-kassel-land .page-banner-down-indicator {
+  width: 100%;
+  height: 90px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 @media screen and (max-width: 1279px) {
   .region-kassel-land footer.footer .footer-menu-wrap > .row {
