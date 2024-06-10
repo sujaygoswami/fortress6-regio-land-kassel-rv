@@ -489,7 +489,7 @@
         & + section{
             margin-top: -130px;
 
-            @media screen and (max-height: 999px) and (min-width: $xl) {
+            @media screen and (max-height: 700px) and (min-width: $xl) {
                 padding-top: 350px;
             }
         }
@@ -616,7 +616,7 @@
                 bottom: 0px;
 
                 &.responsive-view-2{
-                    @media screen and (max-height: 999px) and (min-width: $xl) {
+                    @media screen and (max-height: 700px) and (min-width: $xl) {
                         bottom: -150px;
                     }
                 }
@@ -667,7 +667,7 @@
             }
             &.viewport-height-type-2{
                 height: calc(100vh - 130px);
-                @media screen and (max-height: 999px) and (min-width: $xl) {
+                @media screen and (max-height: 700px) and (min-width: $xl) {
                     height: 100vh;
                 }
             }
