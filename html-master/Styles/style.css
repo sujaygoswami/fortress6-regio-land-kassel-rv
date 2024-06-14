@@ -7987,7 +7987,9 @@ textarea.form-control-lg {
   --site-primary-font-thin: 100;
   --site-primary-font-Extra-light: 200;
   --site-primary-font-light: 300;
-  --site-primary-font-black: 900; }
+  --site-primary-font-black: 900;
+  --site-hand-writing-font: 'Shadows Into';
+  --site-hand-writing-font-regular: 300; }
 
 :root {
   --site-primary-color: #2D7174;
@@ -8066,6 +8068,13 @@ textarea.form-control-lg {
   src: url("../Fonts/Urbanist-Black.eot");
   src: url("../Fonts/Urbanist-Black.eot?#iefix") format("embedded-opentype"), url("../Fonts/Urbanist-Black.woff2") format("woff2"), url("../Fonts/Urbanist-Black.woff") format("woff"), url("../Fonts/Urbanist-Black.svg#Urbanist-Black") format("svg");
   font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Shadows Into';
+  src: url("../Fonts/ShadowsIntoLight.woff2") format("woff2"), url("../Fonts/ShadowsIntoLight.woff") format("woff");
+  font-weight: 300;
   font-style: normal;
   font-display: swap; }
 
@@ -8766,7 +8775,7 @@ html, body {
     font-weight: var(--site-primary-font-bold);
     letter-spacing: 0.36px;
     display: block;
-    margin-bottom: 5px; }
+    margin-bottom: 10px; }
   .region-kassel-land .page-banner-single-search-form .main-search-form .text-input {
     font-size: 18px;
     line-height: normal;
