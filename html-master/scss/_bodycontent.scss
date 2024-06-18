@@ -689,6 +689,38 @@
 
     // page-banner-single-search-form
     .page-banner-single-search-form{
+
+        .artwork-text{
+            position: absolute;
+            right: 0px;
+            top: -36px;
+            font-size: 26px;
+            line-height: 30px;
+            letter-spacing: 0.52px;
+            color: var(--site-primary-color);
+            font-family: var(--site-hand-writing-font);
+            font-weight: var(--site-hand-writing-font-regular);
+            padding-left: 90px;
+            background-image: url(../Images/pfeil.svg);
+            background-repeat: no-repeat;
+            background-position: left top;
+            background-size: 78px;
+            z-index: 1;
+
+            @media screen and (min-width: $xxl) {
+                right: -200px;
+            }
+
+            @media screen and (max-width: ($xl - 1px)){
+                display: none;
+            }
+
+            
+        }
+
+        .main-search-form-wrap{
+            position: relative;
+        }
        
         .module-card{
             padding: 62px 45px;
@@ -700,6 +732,17 @@
             padding: 30px;
             display: flex;
             align-items: center;
+            position: relative;
+            
+
+
+            @media screen and (max-width: ($xxl - 1px)) and (min-width: $xl) {
+                max-width: 75%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+           
+            
             @media screen and (min-width: $xl) {
                 @include border-radius(82px);
                 padding: 22px 35px 22px 45px;
