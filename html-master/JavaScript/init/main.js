@@ -275,6 +275,9 @@ if ($(window).width() < 1280) {
   site.SPONSORDETAILMODULERESPONSIVE();
 };
 
+// banner-special-search-content-part
+jQuery('.banner-special-search-content-part').detach().insertAfter('.main-banner-part');
+
 
 
 
@@ -290,6 +293,10 @@ if ($(window).width() < 1280) {
 
 // load
 jQuery(window).load(function(){
+
+// banner-special-search-content-part
+jQuery('.banner-special-search-content-part').addClass('loaded');
+// banner-special-search-content-part
 
 // iconic content isotop
 jQuery('.iconic-content-masonry-isotpe-module .the-isotope').isotope({

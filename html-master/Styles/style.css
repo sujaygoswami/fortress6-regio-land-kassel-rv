@@ -9582,6 +9582,20 @@ html, body {
   align-items: center;
   justify-content: center; }
 
+.region-kassel-land .listinig-view-activity .nav-tabs {
+  column-gap: 15px;
+  row-gap: 15px;
+  border: none; }
+  .region-kassel-land .listinig-view-activity .nav-tabs .nav-link {
+    margin-bottom: 0px; }
+
+.region-kassel-land .banner-special-search-content-part {
+  visibility: hidden;
+  pointer-events: none; }
+  .region-kassel-land .banner-special-search-content-part.loaded {
+    visibility: visible;
+    pointer-events: auto; }
+
 @media screen and (max-width: 1279px) {
   .region-kassel-land footer.footer .footer-menu-wrap > .row {
     flex-wrap: wrap; }
