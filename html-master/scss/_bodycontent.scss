@@ -1848,4 +1848,87 @@
     }
     // banner-special-search-content-part
 
+    // filter-result-tab-display-container
+    .gm-ui-hover-effect {
+        position: absolute !important;
+        right: 0;
+        z-index: 1;
+    }
+    
+    .gm-style-iw-ch{display:none}
+
+
+
+    
+    
+    .filter-result-tab-display-container{
+        .gm-style{
+            .gm-style-iw-t{
+                .gm-style-iw{
+                    &.gm-style-iw-c{
+                        padding: 0px;
+
+                        .gm-style-iw-d{
+                            @include border-radius (10px);
+                            min-width: 470px;
+                            min-height: 150px;
+                            overflow: auto !important;
+                            // max-height: inherit !important;
+                            padding: 10px;
+
+                            .card{
+                                width: 100% !important;
+                                border: none;
+
+                                .card-body{
+                                    padding: 15px 20px 60px 20px;
+                                    height: 100%;
+                                    .card-text{
+                                        font-size: 18px;
+                                        letter-spacing: 0.36px;
+                                        color: var(--site-primary-color-dark);
+                                        font-weight: var(--site-primary-font-bold);
+                                    }
+                                }
+
+                                .card-footer{
+                                    border: none;
+                                    background-color: transparent;
+                                    display: flex;
+                                    padding: 15px 20px;
+                                    font-size: 18px;
+                                    letter-spacing: 0.36px;
+                                    color: var(--site-primary-color-dark);
+                                    position: absolute;
+                                    bottom: 0px;
+                                    width: 100%;
+
+                                    .right-info{
+                                        margin-left: auto;
+                                        font-weight: var(--site-primary-font-bold);
+                                    }
+                                }
+
+                                .col{
+                                    position: relative;
+                                }
+
+                                .col-2.set-back{
+                                    width: 160px;
+                                    height: 134px;
+                                    background-repeat: no-repeat;
+                                    background-position: center top;
+                                    background-size: cover;
+                                    @include border-radius (5px);
+                                    overflow: hidden;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // filter-result-tab-display-container
+
 }

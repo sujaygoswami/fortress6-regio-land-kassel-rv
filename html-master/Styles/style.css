@@ -9596,6 +9596,64 @@ html, body {
     visibility: visible;
     pointer-events: auto; }
 
+.region-kassel-land .gm-ui-hover-effect {
+  position: absolute !important;
+  right: 0;
+  z-index: 1; }
+
+.region-kassel-land .gm-style-iw-ch {
+  display: none; }
+
+.region-kassel-land .filter-result-tab-display-container .gm-style .gm-style-iw-t .gm-style-iw.gm-style-iw-c {
+  padding: 0px; }
+  .region-kassel-land .filter-result-tab-display-container .gm-style .gm-style-iw-t .gm-style-iw.gm-style-iw-c .gm-style-iw-d {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    min-width: 470px;
+    min-height: 150px;
+    overflow: auto !important;
+    padding: 10px; }
+    .region-kassel-land .filter-result-tab-display-container .gm-style .gm-style-iw-t .gm-style-iw.gm-style-iw-c .gm-style-iw-d .card {
+      width: 100% !important;
+      border: none; }
+      .region-kassel-land .filter-result-tab-display-container .gm-style .gm-style-iw-t .gm-style-iw.gm-style-iw-c .gm-style-iw-d .card .card-body {
+        padding: 15px 20px 60px 20px;
+        height: 100%; }
+        .region-kassel-land .filter-result-tab-display-container .gm-style .gm-style-iw-t .gm-style-iw.gm-style-iw-c .gm-style-iw-d .card .card-body .card-text {
+          font-size: 18px;
+          letter-spacing: 0.36px;
+          color: var(--site-primary-color-dark);
+          font-weight: var(--site-primary-font-bold); }
+      .region-kassel-land .filter-result-tab-display-container .gm-style .gm-style-iw-t .gm-style-iw.gm-style-iw-c .gm-style-iw-d .card .card-footer {
+        border: none;
+        background-color: transparent;
+        display: flex;
+        padding: 15px 20px;
+        font-size: 18px;
+        letter-spacing: 0.36px;
+        color: var(--site-primary-color-dark);
+        position: absolute;
+        bottom: 0px;
+        width: 100%; }
+        .region-kassel-land .filter-result-tab-display-container .gm-style .gm-style-iw-t .gm-style-iw.gm-style-iw-c .gm-style-iw-d .card .card-footer .right-info {
+          margin-left: auto;
+          font-weight: var(--site-primary-font-bold); }
+      .region-kassel-land .filter-result-tab-display-container .gm-style .gm-style-iw-t .gm-style-iw.gm-style-iw-c .gm-style-iw-d .card .col {
+        position: relative; }
+      .region-kassel-land .filter-result-tab-display-container .gm-style .gm-style-iw-t .gm-style-iw.gm-style-iw-c .gm-style-iw-d .card .col-2.set-back {
+        width: 160px;
+        height: 134px;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        border-radius: 5px;
+        overflow: hidden; }
+
 @media screen and (max-width: 1279px) {
   .region-kassel-land footer.footer .footer-menu-wrap > .row {
     flex-wrap: wrap; }
