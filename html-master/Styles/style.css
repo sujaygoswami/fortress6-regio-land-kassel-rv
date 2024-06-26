@@ -8979,7 +8979,7 @@ html, body {
     height: 100%;
     background-color: transparent;
     border: none;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 0.9px;
     font-weight: var(--site-primary-font-bold);
     color: var(--site-primary-color-dark);
@@ -8987,7 +8987,7 @@ html, body {
     cursor: pointer; }
     @media screen and (min-width: 1280px) {
       .region-kassel-land .advance-search-form .field-holder .select-menu {
-        font-size: 18px; } }
+        font-size: 14px; } }
 
 .region-kassel-land .advance-search-form .activity-holder {
   display: flex;
@@ -9653,6 +9653,68 @@ html, body {
         -ms-border-radius: 5px;
         border-radius: 5px;
         overflow: hidden; }
+
+.region-kassel-land .dropdown-site-parent {
+  position: relative; }
+
+.region-kassel-land .drop-down-menu-site {
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  top: 100%;
+  max-height: 200px;
+  overflow: auto; }
+
+.region-kassel-land .multi-checkbox-filter-field {
+  display: flex;
+  align-items: center; }
+  .region-kassel-land .multi-checkbox-filter-field input[type="checkbox"] {
+    position: relative;
+    top: 1px;
+    margin-right: 3px; }
+  .region-kassel-land .multi-checkbox-filter-field .drop-down-menu-site {
+    width: 80%;
+    border-top: 0px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -ms-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    margin: 0 0 0 10% !important;
+    z-index: 1;
+    padding: 10px 0 0 0; }
+  .region-kassel-land .multi-checkbox-filter-field .checkboxes label {
+    padding: 0 10px;
+    margin: 0 0 10px 0;
+    display: block;
+    font-size: 14px;
+    line-height: normal; }
+  .region-kassel-land .multi-checkbox-filter-field .checkboxes fieldset {
+    border-top: 1px solid #ddd !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    padding-top: 10px; }
+    .region-kassel-land .multi-checkbox-filter-field .checkboxes fieldset:first-child {
+      border-top: 0px !important;
+      padding-top: 0px; }
+    .region-kassel-land .multi-checkbox-filter-field .checkboxes fieldset legend {
+      display: block !important;
+      width: 100% !important;
+      margin: 0px; }
+  .region-kassel-land .multi-checkbox-filter-field .control-label {
+    margin: 0px;
+    line-height: 48px; }
 
 @media screen and (max-width: 1279px) {
   .region-kassel-land footer.footer .footer-menu-wrap > .row {

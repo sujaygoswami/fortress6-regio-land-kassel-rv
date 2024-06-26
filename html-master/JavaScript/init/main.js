@@ -278,7 +278,22 @@ if ($(window).width() < 1280) {
 // banner-special-search-content-part
 jQuery('.banner-special-search-content-part').detach().insertAfter('.main-banner-part');
 
+// drop down site
+jQuery('.dropdown-trigger-parent').click(function(){
+  jQuery(this).find('.drop-down-menu-site').toggle();
+});
 
+jQuery('.dropdown-trigger').click(function(e){
+  jQuery(this).parents('.dropdown-site-parent').find('.drop-down-menu-site').toggle();
+  e.stopPropagation();
+});
+jQuery('.drop-down-menu-site').click(function(e){
+  jQuery(this).show();
+  e.stopPropagation();
+});
+jQuery(document).click(function(){
+  jQuery('.drop-down-menu-site').hide();
+});
 
 
 
