@@ -284,6 +284,8 @@ jQuery('.dropdown-trigger-parent').click(function(){
 });
 
 jQuery('.dropdown-trigger').click(function(e){
+  var THISDROPDOWN = jQuery(this).parents('.dropdown-site-parent').find('.drop-down-menu-site');
+  jQuery('.drop-down-menu-site').not(THISDROPDOWN).hide();
   jQuery(this).parents('.dropdown-site-parent').find('.drop-down-menu-site').toggle();
   e.stopPropagation();
 });
@@ -294,6 +296,9 @@ jQuery('.drop-down-menu-site').click(function(e){
 jQuery(document).click(function(){
   jQuery('.drop-down-menu-site').hide();
 });
+// jQuery('.advance-search-form .multi-checkbox-filter-field').each(function(){
+//   jQuery(this).find('.row').removeClass('row');
+// });
 
 
 

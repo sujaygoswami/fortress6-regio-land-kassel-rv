@@ -9693,28 +9693,53 @@ html, body {
     margin: 0 0 0 10% !important;
     z-index: 1;
     padding: 10px 0 0 0; }
-  .region-kassel-land .multi-checkbox-filter-field .checkboxes label {
-    padding: 0 10px;
-    margin: 0 0 10px 0;
-    display: block;
-    font-size: 14px;
-    line-height: normal; }
-  .region-kassel-land .multi-checkbox-filter-field .checkboxes fieldset {
-    border-top: 1px solid #ddd !important;
-    border-left: none !important;
-    border-right: none !important;
-    border-bottom: none !important;
-    padding-top: 10px; }
-    .region-kassel-land .multi-checkbox-filter-field .checkboxes fieldset:first-child {
-      border-top: 0px !important;
-      padding-top: 0px; }
-    .region-kassel-land .multi-checkbox-filter-field .checkboxes fieldset legend {
-      display: block !important;
-      width: 100% !important;
-      margin: 0px; }
+  .region-kassel-land .multi-checkbox-filter-field .checkboxes {
+    border: none;
+    overflow: hidden;
+    padding: 0px; }
+    .region-kassel-land .multi-checkbox-filter-field .checkboxes .row {
+      margin: 0px;
+      --bs-gutter-x: 0; }
+    .region-kassel-land .multi-checkbox-filter-field .checkboxes label {
+      padding: 0 10px;
+      margin: 0 0 10px 0;
+      display: block;
+      font-size: 14px;
+      line-height: normal; }
+    .region-kassel-land .multi-checkbox-filter-field .checkboxes fieldset {
+      border-top: 1px solid #ddd !important;
+      border-left: none !important;
+      border-right: none !important;
+      border-bottom: none !important;
+      padding-top: 10px; }
+      .region-kassel-land .multi-checkbox-filter-field .checkboxes fieldset:first-child {
+        border-top: 0px !important;
+        padding-top: 0px; }
+      .region-kassel-land .multi-checkbox-filter-field .checkboxes fieldset legend {
+        display: block !important;
+        width: 100% !important;
+        margin: 0px; }
+        .region-kassel-land .multi-checkbox-filter-field .checkboxes fieldset legend ~ .fieldset-inner {
+          padding-left: 10px; }
   .region-kassel-land .multi-checkbox-filter-field .control-label {
     margin: 0px;
     line-height: 48px; }
+
+.region-kassel-land #openimmo-detail-map .gm-ui-hover-effect {
+  width: 25px !important;
+  height: 25px !important; }
+  .region-kassel-land #openimmo-detail-map .gm-ui-hover-effect span {
+    width: 15px !important;
+    height: 15px !important;
+    margin: 5px !important; }
+
+.region-kassel-land #openimmo-detail-map .gm-style-iw.gm-style-iw-c {
+  padding: 0px; }
+
+.region-kassel-land #openimmo-detail-map .gm-style-iw-d {
+  overflow: auto !important; }
+  .region-kassel-land #openimmo-detail-map .gm-style-iw-d > div {
+    padding: 30px 20px; }
 
 @media screen and (max-width: 1279px) {
   .region-kassel-land footer.footer .footer-menu-wrap > .row {

@@ -1977,6 +1977,14 @@
         }
 
         .checkboxes{
+            border: none;
+            overflow: hidden;
+            padding: 0px;
+            .row{
+                // display: inherit;
+                margin: 0px;
+                --bs-gutter-x: 0;
+            }
             label{
                 padding: 0 10px;
                 margin: 0 0 10px 0;
@@ -2000,6 +2008,10 @@
                     display: block !important;
                     width: 100% !important;
                     margin: 0px;
+
+                    & ~ .fieldset-inner{
+                        padding-left: 10px;
+                    }
                 }
             }
         }
@@ -2010,5 +2022,31 @@
         }
     }
     // multi-checkbox-filter-field
+
+    // #openimmo-detail-map
+    #openimmo-detail-map{
+        .gm-ui-hover-effect{
+            width: 25px !important;
+            height: 25px !important;
+
+            span{
+                width: 15px !important;
+                height: 15px !important;
+                margin: 5px !important;
+            }
+        }
+        .gm-style-iw{
+            &.gm-style-iw-c{
+                padding: 0px;
+            }
+        }
+        .gm-style-iw-d{
+            overflow: auto !important;
+            & > div{
+                padding: 30px 20px;
+            }
+        }
+    }
+    // #openimmo-detail-map
 
 }
