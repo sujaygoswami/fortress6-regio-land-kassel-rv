@@ -1876,6 +1876,12 @@
                             // max-height: inherit !important;
                             padding: 10px;
 
+                            @media screen and (max-width: ($md - 1px)) {
+                                min-width: inherit;
+                                padding-right: 25px;
+
+                            }
+
                             .card{
                                 width: 100% !important;
                                 border: none;
@@ -1883,11 +1889,20 @@
                                 .card-body{
                                     padding: 15px 20px 60px 20px;
                                     height: 100%;
+                                    @media screen and (max-width: ($md - 1px)) {
+                                        padding: 15px 0;
+                                        height: auto;
+                                    }
                                     .card-text{
                                         font-size: 18px;
                                         letter-spacing: 0.36px;
                                         color: var(--site-primary-color-dark);
                                         font-weight: var(--site-primary-font-bold);
+
+                                        @media screen and (max-width: ($md - 1px)) {
+                                            font-size: 12px;
+                                            line-height: normal;
+                                        }
                                     }
                                 }
 
@@ -1902,6 +1917,13 @@
                                     position: absolute;
                                     bottom: 0px;
                                     width: 100%;
+
+                                    @media screen and (max-width: ($md - 1px)) {
+                                        font-size: 12px;
+                                        line-height: normal;
+                                        position: static;
+                                        padding: 15px 0;
+                                    }
 
                                     .right-info{
                                         margin-left: auto;
@@ -2048,5 +2070,14 @@
         }
     }
     // #openimmo-detail-map
+
+    // #openimmo-shorting-form2
+    #openimmo-shorting-form2{
+        &.inactive{
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+    // #openimmo-shorting-form2
 
 }

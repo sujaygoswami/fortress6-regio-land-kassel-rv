@@ -9615,17 +9615,29 @@ html, body {
     min-height: 150px;
     overflow: auto !important;
     padding: 10px; }
+    @media screen and (max-width: 767px) {
+      .region-kassel-land .filter-result-tab-display-container .gm-style .gm-style-iw-t .gm-style-iw.gm-style-iw-c .gm-style-iw-d {
+        min-width: inherit;
+        padding-right: 25px; } }
     .region-kassel-land .filter-result-tab-display-container .gm-style .gm-style-iw-t .gm-style-iw.gm-style-iw-c .gm-style-iw-d .card {
       width: 100% !important;
       border: none; }
       .region-kassel-land .filter-result-tab-display-container .gm-style .gm-style-iw-t .gm-style-iw.gm-style-iw-c .gm-style-iw-d .card .card-body {
         padding: 15px 20px 60px 20px;
         height: 100%; }
+        @media screen and (max-width: 767px) {
+          .region-kassel-land .filter-result-tab-display-container .gm-style .gm-style-iw-t .gm-style-iw.gm-style-iw-c .gm-style-iw-d .card .card-body {
+            padding: 15px 0;
+            height: auto; } }
         .region-kassel-land .filter-result-tab-display-container .gm-style .gm-style-iw-t .gm-style-iw.gm-style-iw-c .gm-style-iw-d .card .card-body .card-text {
           font-size: 18px;
           letter-spacing: 0.36px;
           color: var(--site-primary-color-dark);
           font-weight: var(--site-primary-font-bold); }
+          @media screen and (max-width: 767px) {
+            .region-kassel-land .filter-result-tab-display-container .gm-style .gm-style-iw-t .gm-style-iw.gm-style-iw-c .gm-style-iw-d .card .card-body .card-text {
+              font-size: 12px;
+              line-height: normal; } }
       .region-kassel-land .filter-result-tab-display-container .gm-style .gm-style-iw-t .gm-style-iw.gm-style-iw-c .gm-style-iw-d .card .card-footer {
         border: none;
         background-color: transparent;
@@ -9637,6 +9649,12 @@ html, body {
         position: absolute;
         bottom: 0px;
         width: 100%; }
+        @media screen and (max-width: 767px) {
+          .region-kassel-land .filter-result-tab-display-container .gm-style .gm-style-iw-t .gm-style-iw.gm-style-iw-c .gm-style-iw-d .card .card-footer {
+            font-size: 12px;
+            line-height: normal;
+            position: static;
+            padding: 15px 0; } }
         .region-kassel-land .filter-result-tab-display-container .gm-style .gm-style-iw-t .gm-style-iw.gm-style-iw-c .gm-style-iw-d .card .card-footer .right-info {
           margin-left: auto;
           font-weight: var(--site-primary-font-bold); }
@@ -9740,6 +9758,10 @@ html, body {
   overflow: auto !important; }
   .region-kassel-land #openimmo-detail-map .gm-style-iw-d > div {
     padding: 30px 20px; }
+
+.region-kassel-land #openimmo-shorting-form2.inactive {
+  opacity: 0;
+  pointer-events: none; }
 
 @media screen and (max-width: 1279px) {
   .region-kassel-land footer.footer .footer-menu-wrap > .row {

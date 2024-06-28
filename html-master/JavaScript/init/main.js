@@ -300,6 +300,15 @@ jQuery(document).click(function(){
 //   jQuery(this).find('.row').removeClass('row');
 // });
 
+// nav tab
+jQuery('.listinig-view-activity .nav-link').on('click', function(){
+  if (jQuery(this).parents('.listinig-view-activity').find('#profile-tab').hasClass('active')) {
+    jQuery('#openimmo-shorting-form2').addClass('inactive');
+  }else{
+    jQuery('#openimmo-shorting-form2').removeClass('inactive');
+  }
+});
+
 
 
 });
