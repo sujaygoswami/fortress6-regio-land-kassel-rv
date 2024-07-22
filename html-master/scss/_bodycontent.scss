@@ -437,8 +437,8 @@
         }
 
         &.subline{
-            font-size: 31px;
-            line-height: 40px;
+            font-size: 25px;
+            line-height: 35px;
             letter-spacing: 0.7px;
 
             @media screen and (min-width: $xl) {
@@ -1615,6 +1615,38 @@
     .filter-slider-module{
         margin-top: -30vh;
 
+        @media screen and (max-width: ($xl - 1px)) {
+            .custom-pagi{
+                position: absolute;
+                width: 100%;
+                left: 0px;
+                bottom: 0px;
+                display: flex;
+                align-items: center;
+                column-gap: 25px;
+                .slick-arrow{
+                    position: static;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+
+                .pagingInfo{
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-size: 24px;
+                    font-weight: var(--site-primary-font-bold);
+                    color: var(--site-primary-color-dark);
+                }
+
+            }
+        }
+
+        .pagingInfo{
+            @media screen and (min-width: $xl) {
+                display: none;
+            }
+        }
+
         .slick-dots{
             list-style: none;
             margin: 0px;
@@ -1789,6 +1821,7 @@
 
     // bordered-listing-column-module
     .bordered-listing-column-module{
+       
         &.view-2{
 
             @media screen and (min-width: $xl) {

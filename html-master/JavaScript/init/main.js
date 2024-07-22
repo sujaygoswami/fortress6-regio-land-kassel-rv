@@ -204,6 +204,16 @@ jQuery('.filter-slider-module').each(function(){
   var SLIDER = jQuery(this).find('.slider');
   var PARENTTHIS = jQuery(this);
 
+
+  jQuery(this).prepend('<span class="pagingInfo"></span>');
+  var $status = jQuery(this).find('.pagingInfo');
+  var $slickElement = jQuery(this).find('.slider');
+  var slicklist = jQuery(this).find('.slick-list');
+  $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+    var i = (currentSlide ? currentSlide : 0) + 1;
+    $status.text(i + '/' + slick.slideCount);
+  });
+
   
 
 
@@ -215,9 +225,9 @@ jQuery('.filter-slider-module').each(function(){
     infinite: false,
     responsive: [
       {
-        breakpoint: 1279,
+        breakpoint: 1280,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           dots: false
         }
       },
@@ -240,18 +250,50 @@ jQuery('.filter-slider-module').each(function(){
 
 
 
-  jQuery(this).find('.filter li').on('click', function(e){
-    jQuery(PARENTTHIS).find('.filter li').removeClass('active');
-    jQuery(this).addClass('active');
-    var DATAFILTER = jQuery(this).attr('data-filter');
-    jQuery(SLIDER).slick('slickUnfilter');
-    if(DATAFILTER != 'all'){
-      jQuery(SLIDER).slick('slickFilter',"." + DATAFILTER);
-    }
-    e.stopPropagation();
+  // jQuery(this).find('.filter li').on('click', function(e){
+  //   jQuery(PARENTTHIS).find('.filter li').removeClass('active');
+  //   jQuery(this).addClass('active');
+  //   var DATAFILTER = jQuery(this).attr('data-filter');
+  //   jQuery(SLIDER).slick('slickUnfilter');
+  //   if(DATAFILTER != 'all'){
+  //     jQuery(SLIDER).slick('slickFilter',"." + DATAFILTER);
+  //   }
+  //   e.stopPropagation();
   
     
-  });
+  // });
+
+  // https://jsfiddle.net/qzx7aobt/
+
+var filtered = false;
+jQuery(this).find('.filter li').on('click', function () {
+    var filtername = jQuery(this).attr('data-filter');
+    console.log(filtername);
+    if (filtered === false) {
+        $(SLIDER).slick('slickUnfilter');
+        $(SLIDER).slick('slickFilter', '.' + filtername);
+    } else {
+        $(SLIDER).slick('slickUnfilter');
+        $(SLIDER).slick('slickFilter', '.' + filtername);
+        $(SLIDER).slickGoTo(0);
+        filtered = false;
+    }
+});
+
+
+  
+
+  
+  jQuery(this).find('.slick-arrow').wrapAll('<div class="custom-pagi"></div>');
+  var custompagi = jQuery(this).find('.custom-pagi');
+  jQuery(this).find('.pagingInfo').detach().appendTo(custompagi);
+  jQuery(this).find('.slick-next').detach().insertAfter($status);
+  
+
+
+  // if ($(window).width() < 1280) {
+  //   site.SPONSORDETAILMODULERESPONSIVE();
+  // };
 
 });
 

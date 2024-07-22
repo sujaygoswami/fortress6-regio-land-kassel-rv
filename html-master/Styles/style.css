@@ -8593,8 +8593,8 @@ html, body {
   .region-kassel-land p + p .site-btn {
     margin-top: 20px; }
   .region-kassel-land p.subline {
-    font-size: 31px;
-    line-height: 40px;
+    font-size: 25px;
+    line-height: 35px;
     letter-spacing: 0.7px; }
     @media screen and (min-width: 1280px) {
       .region-kassel-land p.subline {
@@ -9433,6 +9433,28 @@ html, body {
 
 .region-kassel-land .filter-slider-module {
   margin-top: -30vh; }
+  @media screen and (max-width: 1279px) {
+    .region-kassel-land .filter-slider-module .custom-pagi {
+      position: absolute;
+      width: 100%;
+      left: 0px;
+      bottom: 0px;
+      display: flex;
+      align-items: center;
+      column-gap: 25px; }
+      .region-kassel-land .filter-slider-module .custom-pagi .slick-arrow {
+        position: static;
+        display: inline-block;
+        vertical-align: middle; }
+      .region-kassel-land .filter-slider-module .custom-pagi .pagingInfo {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 24px;
+        font-weight: var(--site-primary-font-bold);
+        color: var(--site-primary-color-dark); } }
+  @media screen and (min-width: 1280px) {
+    .region-kassel-land .filter-slider-module .pagingInfo {
+      display: none; } }
   .region-kassel-land .filter-slider-module .slick-dots {
     list-style: none;
     margin: 0px;
@@ -9854,6 +9876,10 @@ html, body {
   .region-kassel-land .section-row.responsive-section-row-default {
     padding-top: 80px;
     padding-bottom: 80px; }
+  .region-kassel-land .deafult-card-content img.reponsive-no-floating {
+    display: block;
+    float: none;
+    margin: 20px 0; }
   .region-kassel-land .page-banner-with-search-form-responsive-normalize .slick-list, .region-kassel-land .page-banner-with-search-form-responsive-normalize .slick-track, .region-kassel-land .page-banner-with-search-form-responsive-normalize .slick-slide, .region-kassel-land .page-banner-with-search-form-responsive-normalize .slick-slide > div {
     height: auto !important; }
   .region-kassel-land .page-banner-with-search-form-responsive-normalize + section {

@@ -52,6 +52,16 @@
                 padding-bottom: 80px;
                }
         }
+
+        .deafult-card-content{
+            img{
+                &.reponsive-no-floating{
+                    display: block;
+                    float: none;
+                    margin: 20px 0;
+                }
+            }
+        }
       
 
         // page-banner-with-search-form-responsive-normalize
