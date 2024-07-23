@@ -1,6 +1,21 @@
 // from xxl to rest
 @media screen and (max-width: ($xxl - 1px)){
-    .region-kassel-land {   
+    .region-kassel-land {
+        
+        .advance-search-form{
+            & > .main-wrap{
+                column-gap: 14px;
+            }
+
+            .activity-holder{
+                column-gap: 10px;
+            }
+        }
+        
+        .container, .container-fluid{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
 
       
         .back-module{
@@ -10,11 +25,7 @@
                 }
             }
         }
-        .container, .container-fluid{
-            max-width: 100% !important;
-            padding-left: 30px;
-            padding-right: 30px;
-        }
+        
 
         .row{
             &.my-row{
@@ -38,6 +49,10 @@
 @media screen and (max-width: ($xl - 1px)){
     .region-kassel-land {
 
+        .container, .container-fluid{
+            max-width: 100% !important;
+        }
+
         .back-module{
             &.pos-type-1{
                 & + .inset-container{
@@ -59,6 +74,20 @@
                     display: block;
                     float: none;
                     margin: 20px 0;
+                }
+            }
+        }
+
+        // filter module
+        .filter-slider-module{
+            .filter{
+                column-gap: 10px;
+                row-gap: 10px;
+
+                li{
+                    font-size: 14px;
+                    min-width: inherit;
+                    padding: 5px 10px;
                 }
             }
         }

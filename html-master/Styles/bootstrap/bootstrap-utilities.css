@@ -122,7 +122,7 @@
     top: 0;
     z-index: 1020; } }
 
-@media (min-width: 1280px) {
+@media (min-width: 1260px) {
   .sticky-xl-top {
     position: sticky;
     top: 0;
@@ -2233,7 +2233,7 @@
   .text-lg-center {
     text-align: center !important; } }
 
-@media (min-width: 1280px) {
+@media (min-width: 1260px) {
   .float-xl-start {
     float: left !important; }
   .float-xl-end {

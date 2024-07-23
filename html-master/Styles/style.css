@@ -530,7 +530,7 @@ progress {
   .container, .container-sm, .container-md, .container-lg {
     max-width: 960px; } }
 
-@media (min-width: 1280px) {
+@media (min-width: 1260px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
     max-width: 1220px; } }
 
@@ -1090,7 +1090,7 @@ progress {
   .gy-lg-5 {
     --bs-gutter-y: 3rem; } }
 
-@media (min-width: 1280px) {
+@media (min-width: 1260px) {
   .col-xl {
     flex: 1 0 0%; }
   .row-cols-xl-auto > * {
@@ -1497,7 +1497,7 @@ progress {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch; } }
 
-@media (max-width: 1279.98px) {
+@media (max-width: 1259.98px) {
   .table-responsive-xl {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch; } }
@@ -2767,7 +2767,7 @@ textarea.form-control-lg {
       right: 0;
       left: auto; } }
 
-@media (min-width: 1280px) {
+@media (min-width: 1260px) {
   .dropdown-menu-xl-start {
     --bs-position: start; }
     .dropdown-menu-xl-start[data-bs-popper] {
@@ -3293,7 +3293,7 @@ textarea.form-control-lg {
       padding: 0;
       overflow-y: visible; } }
 
-@media (min-width: 1280px) {
+@media (min-width: 1260px) {
   .navbar-expand-xl {
     flex-wrap: nowrap;
     justify-content: flex-start; }
@@ -4059,7 +4059,7 @@ textarea.form-control-lg {
         margin-left: -1px;
         border-left-width: 1px; } }
 
-@media (min-width: 1280px) {
+@media (min-width: 1260px) {
   .list-group-horizontal-xl {
     flex-direction: row; }
     .list-group-horizontal-xl > .list-group-item:first-child {
@@ -4395,7 +4395,7 @@ textarea.form-control-lg {
   .modal-xl {
     max-width: 800px; } }
 
-@media (min-width: 1280px) {
+@media (min-width: 1260px) {
   .modal-xl {
     max-width: 1140px; } }
 
@@ -4466,7 +4466,7 @@ textarea.form-control-lg {
     .modal-fullscreen-lg-down .modal-footer {
       border-radius: 0; } }
 
-@media (max-width: 1279.98px) {
+@media (max-width: 1259.98px) {
   .modal-fullscreen-xl-down {
     width: 100vw;
     max-width: none;
@@ -5154,7 +5154,7 @@ textarea.form-control-lg {
     top: 0;
     z-index: 1020; } }
 
-@media (min-width: 1280px) {
+@media (min-width: 1260px) {
   .sticky-xl-top {
     position: sticky;
     top: 0;
@@ -7265,7 +7265,7 @@ textarea.form-control-lg {
   .text-lg-center {
     text-align: center !important; } }
 
-@media (min-width: 1280px) {
+@media (min-width: 1260px) {
   .float-xl-start {
     float: left !important; }
   .float-xl-end {
@@ -8198,8 +8198,42 @@ html, body {
     right: 0px !important; }
   .region-kassel-land header.header .mobile-nav li.inactive > a {
     opacity: 0.5; }
+  .region-kassel-land header.header .mobile-nav .dropdown-menu {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--site-secondary-color);
+    margin-top: 20px !important;
+    padding: 10px; }
   .region-kassel-land header.header .mobile-nav .mobile-hmbg {
-    color: var(--site-primary-color-dark); }
+    color: var(--site-primary-color-dark);
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    border-radius: 100%;
+    border: none;
+    width: 37px;
+    height: 37px;
+    text-align: center;
+    line-height: 37px;
+    padding: 0px; }
+    .region-kassel-land header.header .mobile-nav .mobile-hmbg.show {
+      background-color: var(--site-secondary-color); }
+      .region-kassel-land header.header .mobile-nav .mobile-hmbg.show i.fa {
+        width: 100%;
+        height: 100%; }
+        .region-kassel-land header.header .mobile-nav .mobile-hmbg.show i.fa:before {
+          content: " ";
+          background-image: url(../Images/plus-icon-site-primary-dark.svg);
+          background-repeat: no-repeat;
+          background-position: center center;
+          width: 100%;
+          height: 100%;
+          display: block;
+          transform: rotate(-45deg);
+          background-size: 18px; }
     .region-kassel-land header.header .mobile-nav .mobile-hmbg::after {
       display: none; }
   .region-kassel-land header.header .site-logo {
@@ -8214,7 +8248,7 @@ html, body {
     padding: 15px; }
     .region-kassel-land header.header .site-logo > img {
       max-width: 100px; }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1260px) {
       .region-kassel-land header.header .site-logo {
         width: 211px;
         height: 114px;
@@ -8325,20 +8359,20 @@ html, body {
   border-left: 1px solid var(--site-primary-color-light); }
   .region-kassel-land .my-col.has-column-border:first-child {
     border-left: 0px; }
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 1259px) {
     .region-kassel-land .my-col.has-column-border.type-4-column-v1:nth-child(3) {
       border-left: 0px; } }
 
 .region-kassel-land .mb-default {
   margin-bottom: 15px; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1260px) {
     .region-kassel-land .mb-default {
       margin-bottom: 40px; } }
 
 .region-kassel-land .x-padding-default {
   padding-left: 15px;
   padding-right: 15px; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1260px) {
     .region-kassel-land .x-padding-default {
       padding-left: 40px;
       padding-right: 40px; } }
@@ -8346,7 +8380,7 @@ html, body {
 .region-kassel-land .y-padding-default {
   padding-top: 15px;
   padding-bottom: 15px; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1260px) {
     .region-kassel-land .y-padding-default {
       padding-top: 40px;
       padding-bottom: 40px; } }
@@ -8400,7 +8434,7 @@ html, body {
     margin-bottom: 25px; }
   .region-kassel-land .element-gap.element-gap-default {
     margin-bottom: 40px; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1260px) {
     .region-kassel-land .element-gap.element-gap-medium {
       margin-bottom: 50px; }
     .region-kassel-land .element-gap.element-gap-medium-plus {
@@ -8419,7 +8453,7 @@ html, body {
 .region-kassel-land .section-top-bottom-pad-lg {
   padding-top: 200px;
   padding-bottom: 200px; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1260px) {
     .region-kassel-land .section-top-bottom-pad-lg {
       padding-top: 205px;
       padding-bottom: 275px; } }
@@ -8480,7 +8514,7 @@ html, body {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   display: inline-block; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1260px) {
     .region-kassel-land .site-btn {
       font-size: 18px;
       padding: 19px 30px; } }
@@ -8535,7 +8569,7 @@ html, body {
 .region-kassel-land h1, .region-kassel-land .h1 {
   font-size: 40px;
   line-height: normal; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1260px) {
     .region-kassel-land h1, .region-kassel-land .h1 {
       font-size: 70px;
       line-height: 84px; } }
@@ -8543,7 +8577,7 @@ html, body {
 .region-kassel-land h2, .region-kassel-land .h2 {
   font-size: 35px;
   line-height: normal; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1260px) {
     .region-kassel-land h2, .region-kassel-land .h2 {
       font-size: 55px;
       line-height: 66px; } }
@@ -8551,7 +8585,7 @@ html, body {
 .region-kassel-land h3, .region-kassel-land .h3 {
   font-size: 30px;
   line-height: normal; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1260px) {
     .region-kassel-land h3, .region-kassel-land .h3 {
       font-size: 50px;
       line-height: 60px; } }
@@ -8559,7 +8593,7 @@ html, body {
 .region-kassel-land h4, .region-kassel-land .h4 {
   font-size: 25px;
   line-height: normal; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1260px) {
     .region-kassel-land h4, .region-kassel-land .h4 {
       font-size: 40px;
       line-height: 50px; } }
@@ -8567,7 +8601,7 @@ html, body {
 .region-kassel-land h5, .region-kassel-land .h5 {
   font-size: 20px;
   line-height: normal; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1260px) {
     .region-kassel-land h5, .region-kassel-land .h5 {
       font-size: 32px;
       line-height: 45px; } }
@@ -8575,7 +8609,7 @@ html, body {
 .region-kassel-land h6, .region-kassel-land .h6, .region-kassel-land .site-accordion .accordion-button {
   font-size: 16px;
   line-height: normal; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1260px) {
     .region-kassel-land h6, .region-kassel-land .h6, .region-kassel-land .site-accordion .accordion-button {
       font-size: 24px;
       line-height: 32px; } }
@@ -8585,7 +8619,7 @@ html, body {
   line-height: 25px;
   letter-spacing: 0.36px;
   margin-bottom: 15px; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1260px) {
     .region-kassel-land p {
       font-size: 18px;
       line-height: 35px;
@@ -8596,7 +8630,7 @@ html, body {
     font-size: 25px;
     line-height: 35px;
     letter-spacing: 0.7px; }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1260px) {
       .region-kassel-land p.subline {
         font-size: 35px;
         line-height: 45px; } }
@@ -8605,7 +8639,7 @@ html, body {
     line-height: 29px;
     letter-spacing: 4.4px;
     font-family: var(--site-primary-font-Semi-bold); }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1260px) {
       .region-kassel-land p.subline-var-2 {
         font-size: 22px;
         line-height: 32px; } }
@@ -8614,7 +8648,7 @@ html, body {
     line-height: normal;
     letter-spacing: 0.5px;
     font-family: var(--site-primary-font-medium); }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1260px) {
       .region-kassel-land p.subline-var-3 {
         font-size: 25px;
         line-height: 40px; } }
@@ -8624,7 +8658,7 @@ html, body {
   line-height: 25px;
   letter-spacing: 0.36px;
   margin-bottom: 15px; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1260px) {
     .region-kassel-land .basic-entry li {
       font-size: 18px;
       line-height: 35px;
@@ -8635,7 +8669,7 @@ html, body {
 
 .region-kassel-land .has-page-banner-viewport-height-type-2 + section {
   margin-top: -130px; }
-  @media screen and (max-height: 700px) and (min-width: 1280px) {
+  @media screen and (max-height: 700px) and (min-width: 1260px) {
     .region-kassel-land .has-page-banner-viewport-height-type-2 + section {
       padding-top: 350px; } }
 
@@ -8655,7 +8689,7 @@ html, body {
       top: 0px;
       display: flex;
       align-items: center; }
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 1259px) {
     .region-kassel-land .page-banner-module.has-news-detail-banner-content .banner-slider .slick-dots {
       margin-top: 0px;
       bottom: -220px;
@@ -8698,7 +8732,7 @@ html, body {
       padding: 40px 0; }
   .region-kassel-land .page-banner-module .banner-content-part .page-banner-single-search-form.view-2 {
     max-width: 100%; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1260px) {
     .region-kassel-land .page-banner-module .banner-content-part .page-banner-single-search-form {
       max-width: 73.50649%; } }
   .region-kassel-land .page-banner-module .banner-content-part .page-banner-single-search-form.width-type-2 {
@@ -8708,7 +8742,7 @@ html, body {
     width: 100%;
     left: 0px;
     bottom: 0px; }
-    @media screen and (max-height: 700px) and (min-width: 1280px) {
+    @media screen and (max-height: 700px) and (min-width: 1260px) {
       .region-kassel-land .page-banner-module .banner-content-part.pos-type-1.responsive-view-2 {
         bottom: -150px; } }
   .region-kassel-land .page-banner-module .main-banner-part.has-view-height .banner-slider {
@@ -8733,7 +8767,7 @@ html, body {
     height: calc(100vh - 70px); }
   .region-kassel-land .page-banner-module .main-banner-part.viewport-height-type-2 {
     height: calc(100vh - 130px); }
-    @media screen and (max-height: 700px) and (min-width: 1280px) {
+    @media screen and (max-height: 700px) and (min-width: 1260px) {
       .region-kassel-land .page-banner-module .main-banner-part.viewport-height-type-2 {
         height: 100vh; } }
   .region-kassel-land .page-banner-module .main-banner-part.viewport-height-type-3 {
@@ -8742,6 +8776,8 @@ html, body {
     height: calc(100vh - 165px); }
   .region-kassel-land .page-banner-module .main-banner-part.viewport-height-type-5 {
     height: calc(100vh - 90px); }
+  .region-kassel-land .page-banner-module .main-banner-part.viewport-height-type-6 {
+    height: 70vh; }
 
 .region-kassel-land .page-banner-single-search-form .artwork-text {
   position: absolute;
@@ -8762,7 +8798,7 @@ html, body {
   @media screen and (min-width: 1800px) {
     .region-kassel-land .page-banner-single-search-form .artwork-text {
       right: -200px; } }
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 1259px) {
     .region-kassel-land .page-banner-single-search-form .artwork-text {
       display: none; } }
 
@@ -8782,29 +8818,29 @@ html, body {
   display: flex;
   align-items: center;
   position: relative; }
-  @media screen and (max-width: 1799px) and (min-width: 1280px) {
+  @media screen and (max-width: 1799px) and (min-width: 1260px) {
     .region-kassel-land .page-banner-single-search-form .main-search-form {
       max-width: 75%;
       margin-left: auto;
       margin-right: auto; } }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1260px) {
     .region-kassel-land .page-banner-single-search-form .main-search-form {
       -webkit-border-radius: 82px;
       -moz-border-radius: 82px;
       -ms-border-radius: 82px;
       border-radius: 82px;
       padding: 22px 35px 22px 45px; } }
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 1259px) {
     .region-kassel-land .page-banner-single-search-form .main-search-form {
       flex-wrap: wrap; } }
   .region-kassel-land .page-banner-single-search-form .main-search-form .field-holder {
     width: 100%; }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1260px) {
       .region-kassel-land .page-banner-single-search-form .main-search-form .field-holder {
         width: 80%; } }
   .region-kassel-land .page-banner-single-search-form .main-search-form .button-holder {
     margin-top: 15px; }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1260px) {
       .region-kassel-land .page-banner-single-search-form .main-search-form .button-holder {
         margin-left: auto;
         margin-top: 0px; } }
@@ -8836,7 +8872,7 @@ html, body {
     padding: 0 0 0 70px;
     position: relative;
     min-height: 50px; }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1260px) {
       .region-kassel-land .custom-serial-listing-module ul li {
         min-height: 80px;
         margin-bottom: 70px;
@@ -8859,7 +8895,7 @@ html, body {
       top: 0px;
       font-size: 30px;
       font-weight: var(--site-primary-font-bold); }
-      @media screen and (min-width: 1280px) {
+      @media screen and (min-width: 1260px) {
         .region-kassel-land .custom-serial-listing-module ul li span {
           width: 80px;
           height: 80px;
@@ -8873,7 +8909,7 @@ html, body {
   background-repeat: no-repeat;
   background-position: center center;
   justify-content: center; }
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 1259px) {
     .region-kassel-land .iconic-interactive-content-module > .main-wrap {
       flex-direction: column;
       row-gap: 70px;
@@ -8929,7 +8965,7 @@ html, body {
   bottom: 50px;
   display: flex;
   align-items: center; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1260px) {
     .region-kassel-land .site-chat-bot {
       right: 110px; } }
   .region-kassel-land .site-chat-bot span {
@@ -8985,7 +9021,7 @@ html, body {
     color: var(--site-primary-color-dark);
     padding: 0 45px 0 24px;
     cursor: pointer; }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1260px) {
       .region-kassel-land .advance-search-form .field-holder .select-menu {
         font-size: 14px; } }
 
@@ -9104,7 +9140,7 @@ html, body {
     text-align: center;
     padding: 10px 20px;
     min-width: 104px; }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1260px) {
       .region-kassel-land .listing-tags span {
         font-size: 18px; } }
 
@@ -9161,7 +9197,7 @@ html, body {
   align-items: center;
   margin-top: 22px;
   row-gap: 70px; }
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 1259px) {
     .region-kassel-land .product-detail-slider .custom-pagi {
       flex-wrap: wrap;
       row-gap: 40px; }
@@ -9206,7 +9242,7 @@ html, body {
   border-radius: 15px;
   background-color: var(--site-primary-color-light);
   padding: 10px 0; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1260px) {
     .region-kassel-land .product-detail-data-info .product-detal-labeled-info {
       padding: 16px 0; } }
   .region-kassel-land .product-detail-data-info .product-detal-labeled-info > .main-wrap {
@@ -9220,7 +9256,7 @@ html, body {
       padding: 10px;
       text-align: center;
       flex-grow: 1; }
-      @media screen and (min-width: 1280px) {
+      @media screen and (min-width: 1260px) {
         .region-kassel-land .product-detail-data-info .product-detal-labeled-info > .main-wrap div {
           padding: 15px;
           font-size: 25px; } }
@@ -9237,7 +9273,7 @@ html, body {
     line-height: normal;
     color: var(--site-primary-color-dark);
     vertical-align: top; }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1260px) {
       .region-kassel-land .data-table td {
         font-size: 18px; } }
     .region-kassel-land .data-table td:first-child {
@@ -9254,7 +9290,7 @@ html, body {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   border-radius: 10px; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1260px) {
     .region-kassel-land .deafult-card-content {
       padding: 50px 50px 80px 50px; } }
   .region-kassel-land .deafult-card-content.pad-type-2 {
@@ -9313,7 +9349,7 @@ html, body {
 
 .region-kassel-land .iconic-content-masonry-isotpe-module .isotope-item {
   margin-top: 40px; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1260px) {
     .region-kassel-land .iconic-content-masonry-isotpe-module .isotope-item {
       margin-top: 120px; } }
   .region-kassel-land .iconic-content-masonry-isotpe-module .isotope-item:first-child {
@@ -9350,7 +9386,7 @@ html, body {
 
 .region-kassel-land .news-detail-banner-header-module {
   position: relative; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1260px) {
     .region-kassel-land .news-detail-banner-header-module.width-type-1 {
       max-width: 75.39683%; } }
   .region-kassel-land .news-detail-banner-header-module .module-card {
@@ -9361,14 +9397,14 @@ html, body {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     border-radius: 10px; }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1260px) {
       .region-kassel-land .news-detail-banner-header-module .module-card {
         padding: 20px 45px 45px 45px; } }
   .region-kassel-land .news-detail-banner-header-module .module-card-header {
     padding: 0 0 15px 0;
     border-bottom: 1px solid var(--site-primary-color-light);
     margin-bottom: 35px; }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1260px) {
       .region-kassel-land .news-detail-banner-header-module .module-card-header {
         padding: 0 30px 15px 30px; } }
     .region-kassel-land .news-detail-banner-header-module .module-card-header.multi-item-flex {
@@ -9377,7 +9413,7 @@ html, body {
       column-gap: 30px;
       row-gap: 15px;
       flex-wrap: wrap; }
-      @media screen and (min-width: 1280px) {
+      @media screen and (min-width: 1260px) {
         .region-kassel-land .news-detail-banner-header-module .module-card-header.multi-item-flex {
           flex-wrap: nowrap; } }
 
@@ -9433,7 +9469,7 @@ html, body {
 
 .region-kassel-land .filter-slider-module {
   margin-top: -30vh; }
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 1259px) {
     .region-kassel-land .filter-slider-module .custom-pagi {
       position: absolute;
       width: 100%;
@@ -9452,7 +9488,7 @@ html, body {
         font-size: 24px;
         font-weight: var(--site-primary-font-bold);
         color: var(--site-primary-color-dark); } }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1260px) {
     .region-kassel-land .filter-slider-module .pagingInfo {
       display: none; } }
   .region-kassel-land .filter-slider-module .slick-dots {
@@ -9495,7 +9531,7 @@ html, body {
     background-position: left top;
     position: absolute;
     bottom: 0px; }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1260px) {
       .region-kassel-land .filter-slider-module .slick-arrow {
         top: 50%;
         margin-top: -16px; } }
@@ -9512,7 +9548,7 @@ html, body {
     list-style: none;
     margin: 0px;
     padding: 0 0 80px 0; }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1260px) {
       .region-kassel-land .filter-slider-module .slider {
         padding: 0 83px; } }
     .region-kassel-land .filter-slider-module .slider li {
@@ -9557,7 +9593,7 @@ html, body {
     column-gap: 20px;
     row-gap: 20px;
     flex-wrap: wrap; }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1260px) {
       .region-kassel-land .filter-slider-module .filter {
         padding: 0 83px; } }
     @media screen and (min-width: 1800px) {
@@ -9586,7 +9622,7 @@ html, body {
         border-color: var(--site-secondary-color);
         color: var(--site-primary-color-dark); }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1260px) {
   .region-kassel-land .bordered-listing-column-module.view-2 .my-col:not(.responsive-col-auto-till-xl) {
     width: inherit;
     flex: 1 0 0%; }
@@ -9785,13 +9821,13 @@ html, body {
   opacity: 0;
   pointer-events: none; }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1259px) {
   .region-kassel-land footer.footer .footer-menu-wrap > .row {
     flex-wrap: wrap; }
     .region-kassel-land footer.footer .footer-menu-wrap > .row > .my-col {
       width: 50%;
       flex: inherit; } }
-    @media screen and (max-width: 1279px) and (max-width: 767px) {
+    @media screen and (max-width: 1259px) and (max-width: 767px) {
       .region-kassel-land footer.footer .footer-menu-wrap > .row > .my-col {
         width: 100%; } }
 
@@ -9851,17 +9887,20 @@ html, body {
     font-style: normal;
     font-weight: var(--site-primary-font-bold);
     font-size: 16px; }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1260px) {
       .region-kassel-land footer.footer .footer-social > div i {
         font-size: 22px; } }
 
 @media screen and (max-width: 1799px) {
-  .region-kassel-land .back-module.pos-type-1 + .inset-container {
-    padding-left: 70px; }
+  .region-kassel-land .advance-search-form > .main-wrap {
+    column-gap: 14px; }
+  .region-kassel-land .advance-search-form .activity-holder {
+    column-gap: 10px; }
   .region-kassel-land .container, .region-kassel-land .container-fluid, .region-kassel-land .container-sm, .region-kassel-land .container-md, .region-kassel-land .container-lg, .region-kassel-land .container-xl, .region-kassel-land .container-xxl {
-    max-width: 100% !important;
     padding-left: 30px;
     padding-right: 30px; }
+  .region-kassel-land .back-module.pos-type-1 + .inset-container {
+    padding-left: 70px; }
   .region-kassel-land .row.my-row.default-row:not(.tiny-row) {
     margin-left: -15px;
     margin-right: -15px;
@@ -9870,7 +9909,9 @@ html, body {
       padding-left: 15px;
       padding-right: 15px; } }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1259px) {
+  .region-kassel-land .container, .region-kassel-land .container-fluid, .region-kassel-land .container-sm, .region-kassel-land .container-md, .region-kassel-land .container-lg, .region-kassel-land .container-xl, .region-kassel-land .container-xxl {
+    max-width: 100% !important; }
   .region-kassel-land .back-module.pos-type-1 + .inset-container {
     padding-left: 0px; }
   .region-kassel-land .section-row.responsive-section-row-default {
@@ -9880,6 +9921,13 @@ html, body {
     display: block;
     float: none;
     margin: 20px 0; }
+  .region-kassel-land .filter-slider-module .filter {
+    column-gap: 10px;
+    row-gap: 10px; }
+    .region-kassel-land .filter-slider-module .filter li {
+      font-size: 14px;
+      min-width: inherit;
+      padding: 5px 10px; }
   .region-kassel-land .page-banner-with-search-form-responsive-normalize .slick-list, .region-kassel-land .page-banner-with-search-form-responsive-normalize .slick-track, .region-kassel-land .page-banner-with-search-form-responsive-normalize .slick-slide, .region-kassel-land .page-banner-with-search-form-responsive-normalize .slick-slide > div {
     height: auto !important; }
   .region-kassel-land .page-banner-with-search-form-responsive-normalize + section {

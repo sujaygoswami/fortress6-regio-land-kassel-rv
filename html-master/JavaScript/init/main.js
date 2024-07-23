@@ -1,6 +1,6 @@
 jQuery(document).ready(function(){
 
-
+var widthXL = 1260;
 
 
 
@@ -214,32 +214,37 @@ jQuery('.filter-slider-module').each(function(){
     $status.text(i + '/' + slick.slideCount);
   });
 
+ 
+
+  if ($(window).width() > widthXL - 1 ) {
+    jQuery(SLIDER).slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: true,
+      infinite: false
+    });
+  } else if ($(window).width() >= 768) {
+    jQuery(SLIDER).slick({
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: false,
+      infinite: false
+    });
+  } else if ($(window).width() < 768) {
+    jQuery(SLIDER).slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: false,
+      infinite: false
+    });
+  }
+
+ 
   
 
-
-  jQuery(SLIDER).slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    arrows: true,
-    dots: true,
-    infinite: false,
-    responsive: [
-      {
-        breakpoint: 1280,
-        settings: {
-          slidesToShow: 1,
-          dots: false
-        }
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-          dots: false
-        }
-      }
-    ]
-  });
 
   jQuery(this).find('.slider li').each(function(){
     var DATACLASS = jQuery(this).attr('data-class');
@@ -250,50 +255,33 @@ jQuery('.filter-slider-module').each(function(){
 
 
 
-  // jQuery(this).find('.filter li').on('click', function(e){
-  //   jQuery(PARENTTHIS).find('.filter li').removeClass('active');
-  //   jQuery(this).addClass('active');
-  //   var DATAFILTER = jQuery(this).attr('data-filter');
-  //   jQuery(SLIDER).slick('slickUnfilter');
-  //   if(DATAFILTER != 'all'){
-  //     jQuery(SLIDER).slick('slickFilter',"." + DATAFILTER);
-  //   }
-  //   e.stopPropagation();
+  jQuery(this).find('.filter li').on('click', function(e){
+    jQuery(PARENTTHIS).find('.filter li').removeClass('active');
+    jQuery(this).addClass('active');
+    var DATAFILTER = jQuery(this).attr('data-filter');
+    jQuery(SLIDER).slick('slickUnfilter');
+    if(DATAFILTER != 'all'){
+      jQuery(SLIDER).slick('slickFilter',"." + DATAFILTER);
+    }
+    
+    e.stopPropagation();
   
     
-  // });
-
-  // https://jsfiddle.net/qzx7aobt/
-
-var filtered = false;
-jQuery(this).find('.filter li').on('click', function () {
-    var filtername = jQuery(this).attr('data-filter');
-    console.log(filtername);
-    if (filtered === false) {
-        $(SLIDER).slick('slickUnfilter');
-        $(SLIDER).slick('slickFilter', '.' + filtername);
-    } else {
-        $(SLIDER).slick('slickUnfilter');
-        $(SLIDER).slick('slickFilter', '.' + filtername);
-        $(SLIDER).slickGoTo(0);
-        filtered = false;
-    }
-});
-
-
-  
+  });
 
   
   jQuery(this).find('.slick-arrow').wrapAll('<div class="custom-pagi"></div>');
   var custompagi = jQuery(this).find('.custom-pagi');
+  var prevbtn = jQuery(this).find('.slick-prev');
+  var nextbtn = jQuery(this).find('.slick-next');
   jQuery(this).find('.pagingInfo').detach().appendTo(custompagi);
   jQuery(this).find('.slick-next').detach().insertAfter($status);
-  
 
+  jQuery(this).find('.filter li').on('click', function(){
+    jQuery(this).parents('.filter-slider-module').find('.slick-prev').detach().prependTo(custompagi);
+    jQuery(this).parents('.filter-slider-module').find('.slick-next').detach().appendTo(custompagi);
+  });
 
-  // if ($(window).width() < 1280) {
-  //   site.SPONSORDETAILMODULERESPONSIVE();
-  // };
 
 });
 
@@ -312,8 +300,8 @@ site.SPONSORDETAILMODULERESPONSIVE = function() {
 
 };
 
-// < 1280 notation declare
-if ($(window).width() < 1280) {
+// < 1260 notation declare
+if ($(window).width() < widthXL) {
   site.SPONSORDETAILMODULERESPONSIVE();
 };
 
