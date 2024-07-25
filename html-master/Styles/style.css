@@ -8551,7 +8551,15 @@ html, body {
   color: var(--site-default-gray); }
   .region-kassel-land .site-text-gray p.subline {
     color: var(--site-default-gray); }
-  .region-kassel-land .site-text-gray h2, .region-kassel-land .site-text-gray .h2, .region-kassel-land .site-text-gray h3, .region-kassel-land .site-text-gray .h3, .region-kassel-land .site-text-gray h4, .region-kassel-land .site-text-gray .h4, .region-kassel-land .site-text-gray h5, .region-kassel-land .site-text-gray .h5, .region-kassel-land .site-text-gray h6, .region-kassel-land .site-text-gray .h6 {
+  .region-kassel-land .site-text-gray h2, .region-kassel-land .site-text-gray .h2,
+  .region-kassel-land .site-text-gray h3,
+  .region-kassel-land .site-text-gray .h3,
+  .region-kassel-land .site-text-gray h4,
+  .region-kassel-land .site-text-gray .h4,
+  .region-kassel-land .site-text-gray h5,
+  .region-kassel-land .site-text-gray .h5,
+  .region-kassel-land .site-text-gray h6,
+  .region-kassel-land .site-text-gray .h6 {
     color: var(--site-default-gray); }
 
 .region-kassel-land .text-color-default {
@@ -8560,10 +8568,30 @@ html, body {
 .region-kassel-land .text-color-primary-dark {
   color: var(--site-primary-color-dark); }
 
-.region-kassel-land h1, .region-kassel-land .h1, .region-kassel-land h2, .region-kassel-land .h2, .region-kassel-land h3, .region-kassel-land .h3, .region-kassel-land h4, .region-kassel-land .h4, .region-kassel-land h5, .region-kassel-land .h5, .region-kassel-land h6, .region-kassel-land .h6 {
+.region-kassel-land h1, .region-kassel-land .h1,
+.region-kassel-land h2,
+.region-kassel-land .h2,
+.region-kassel-land h3,
+.region-kassel-land .h3,
+.region-kassel-land h4,
+.region-kassel-land .h4,
+.region-kassel-land h5,
+.region-kassel-land .h5,
+.region-kassel-land h6,
+.region-kassel-land .h6 {
   font-weight: var(--site-primary-font-bold); }
 
-.region-kassel-land h2, .region-kassel-land .h2, .region-kassel-land h3, .region-kassel-land .h3, .region-kassel-land h4, .region-kassel-land .h4, .region-kassel-land h5, .region-kassel-land .h5, .region-kassel-land h6, .region-kassel-land .h6 {
+
+.region-kassel-land h2,
+.region-kassel-land .h2,
+.region-kassel-land h3,
+.region-kassel-land .h3,
+.region-kassel-land h4,
+.region-kassel-land .h4,
+.region-kassel-land h5,
+.region-kassel-land .h5,
+.region-kassel-land h6,
+.region-kassel-land .h6 {
   color: var(--site-primary-color-dark); }
 
 .region-kassel-land h1, .region-kassel-land .h1 {
@@ -8574,43 +8602,65 @@ html, body {
       font-size: 70px;
       line-height: 84px; } }
 
-.region-kassel-land h2, .region-kassel-land .h2 {
+
+.region-kassel-land h2,
+.region-kassel-land .h2 {
   font-size: 35px;
   line-height: normal; }
   @media screen and (min-width: 1260px) {
-    .region-kassel-land h2, .region-kassel-land .h2 {
+    
+    .region-kassel-land h2,
+    .region-kassel-land .h2 {
       font-size: 55px;
       line-height: 66px; } }
 
-.region-kassel-land h3, .region-kassel-land .h3 {
+
+.region-kassel-land h3,
+.region-kassel-land .h3 {
   font-size: 30px;
   line-height: normal; }
   @media screen and (min-width: 1260px) {
-    .region-kassel-land h3, .region-kassel-land .h3 {
+    
+    .region-kassel-land h3,
+    .region-kassel-land .h3 {
       font-size: 50px;
       line-height: 60px; } }
 
-.region-kassel-land h4, .region-kassel-land .h4 {
+
+.region-kassel-land h4,
+.region-kassel-land .h4 {
   font-size: 25px;
   line-height: normal; }
   @media screen and (min-width: 1260px) {
-    .region-kassel-land h4, .region-kassel-land .h4 {
+    
+    .region-kassel-land h4,
+    .region-kassel-land .h4 {
       font-size: 40px;
       line-height: 50px; } }
 
-.region-kassel-land h5, .region-kassel-land .h5 {
+
+.region-kassel-land h5,
+.region-kassel-land .h5 {
   font-size: 20px;
   line-height: normal; }
   @media screen and (min-width: 1260px) {
-    .region-kassel-land h5, .region-kassel-land .h5 {
+    
+    .region-kassel-land h5,
+    .region-kassel-land .h5 {
       font-size: 32px;
       line-height: 45px; } }
 
-.region-kassel-land h6, .region-kassel-land .h6, .region-kassel-land .site-accordion .accordion-button {
+
+.region-kassel-land h6,
+.region-kassel-land .h6,
+.region-kassel-land .site-accordion .accordion-button {
   font-size: 16px;
   line-height: normal; }
   @media screen and (min-width: 1260px) {
-    .region-kassel-land h6, .region-kassel-land .h6, .region-kassel-land .site-accordion .accordion-button {
+    
+    .region-kassel-land h6,
+    .region-kassel-land .h6,
+    .region-kassel-land .site-accordion .accordion-button {
       font-size: 24px;
       line-height: 32px; } }
 
@@ -8681,6 +8731,14 @@ html, body {
 
 .region-kassel-land .page-banner-module {
   position: relative; }
+  @media screen and (max-width: 1259px) {
+    .region-kassel-land .page-banner-module.has-news-detail-banner-content .banner-content-part.pos-type-1 {
+      bottom: 10vh; } }
+  .region-kassel-land .page-banner-module.view-height-type-2 {
+    height: 85vh; }
+    @media screen and (max-width: 1259px) {
+      .region-kassel-land .page-banner-module.view-height-type-2 .main-banner-part.viewport-height-type-6 {
+        height: auto; } }
   .region-kassel-land .page-banner-module.design-view-2 .main-banner-part {
     position: relative; }
     .region-kassel-land .page-banner-module.design-view-2 .main-banner-part .banner-content-part {
@@ -8690,9 +8748,16 @@ html, body {
       display: flex;
       align-items: center; }
   @media screen and (max-width: 1259px) {
+    .region-kassel-land .page-banner-module.has-news-detail-banner-content .main-banner-part {
+      height: 100vh !important; }
+      .region-kassel-land .page-banner-module.has-news-detail-banner-content .main-banner-part .slick-list,
+      .region-kassel-land .page-banner-module.has-news-detail-banner-content .main-banner-part .slick-track,
+      .region-kassel-land .page-banner-module.has-news-detail-banner-content .main-banner-part .slick-slide,
+      .region-kassel-land .page-banner-module.has-news-detail-banner-content .main-banner-part .slick-slide > div {
+        height: 85vh !important; }
     .region-kassel-land .page-banner-module.has-news-detail-banner-content .banner-slider .slick-dots {
       margin-top: 0px;
-      bottom: -220px;
+      bottom: 0px;
       width: 100%;
       right: 0px;
       justify-content: center; }
@@ -8747,7 +8812,10 @@ html, body {
         bottom: -150px; } }
   .region-kassel-land .page-banner-module .main-banner-part.has-view-height .banner-slider {
     height: 100%; }
-    .region-kassel-land .page-banner-module .main-banner-part.has-view-height .banner-slider .slick-list, .region-kassel-land .page-banner-module .main-banner-part.has-view-height .banner-slider .slick-track, .region-kassel-land .page-banner-module .main-banner-part.has-view-height .banner-slider .slick-slide, .region-kassel-land .page-banner-module .main-banner-part.has-view-height .banner-slider .slick-slide > div {
+    .region-kassel-land .page-banner-module .main-banner-part.has-view-height .banner-slider .slick-list,
+    .region-kassel-land .page-banner-module .main-banner-part.has-view-height .banner-slider .slick-track,
+    .region-kassel-land .page-banner-module .main-banner-part.has-view-height .banner-slider .slick-slide,
+    .region-kassel-land .page-banner-module .main-banner-part.has-view-height .banner-slider .slick-slide > div {
       height: 100%; }
     .region-kassel-land .page-banner-module .main-banner-part.has-view-height .banner-slider .sliding-part {
       height: 100%; }
@@ -9312,12 +9380,32 @@ html, body {
       padding-left: 0px;
       min-width: 250px; }
 
-.region-kassel-land .link-type-listing-module.type-2 h1, .region-kassel-land .link-type-listing-module.type-2 .h1, .region-kassel-land .link-type-listing-module.type-2 h2, .region-kassel-land .link-type-listing-module.type-2 .h2, .region-kassel-land .link-type-listing-module.type-2 h3, .region-kassel-land .link-type-listing-module.type-2 .h3, .region-kassel-land .link-type-listing-module.type-2 h4, .region-kassel-land .link-type-listing-module.type-2 .h4, .region-kassel-land .link-type-listing-module.type-2 h5, .region-kassel-land .link-type-listing-module.type-2 .h5, .region-kassel-land .link-type-listing-module.type-2 h6, .region-kassel-land .link-type-listing-module.type-2 .h6 {
+.region-kassel-land .link-type-listing-module.type-2 h1, .region-kassel-land .link-type-listing-module.type-2 .h1,
+.region-kassel-land .link-type-listing-module.type-2 h2,
+.region-kassel-land .link-type-listing-module.type-2 .h2,
+.region-kassel-land .link-type-listing-module.type-2 h3,
+.region-kassel-land .link-type-listing-module.type-2 .h3,
+.region-kassel-land .link-type-listing-module.type-2 h4,
+.region-kassel-land .link-type-listing-module.type-2 .h4,
+.region-kassel-land .link-type-listing-module.type-2 h5,
+.region-kassel-land .link-type-listing-module.type-2 .h5,
+.region-kassel-land .link-type-listing-module.type-2 h6,
+.region-kassel-land .link-type-listing-module.type-2 .h6 {
   display: block;
   position: relative;
   padding-right: 15px;
   margin-bottom: 18px; }
-  .region-kassel-land .link-type-listing-module.type-2 h1:after, .region-kassel-land .link-type-listing-module.type-2 .h1:after, .region-kassel-land .link-type-listing-module.type-2 h2:after, .region-kassel-land .link-type-listing-module.type-2 .h2:after, .region-kassel-land .link-type-listing-module.type-2 h3:after, .region-kassel-land .link-type-listing-module.type-2 .h3:after, .region-kassel-land .link-type-listing-module.type-2 h4:after, .region-kassel-land .link-type-listing-module.type-2 .h4:after, .region-kassel-land .link-type-listing-module.type-2 h5:after, .region-kassel-land .link-type-listing-module.type-2 .h5:after, .region-kassel-land .link-type-listing-module.type-2 h6:after, .region-kassel-land .link-type-listing-module.type-2 .h6:after {
+  .region-kassel-land .link-type-listing-module.type-2 h1:after, .region-kassel-land .link-type-listing-module.type-2 .h1:after,
+  .region-kassel-land .link-type-listing-module.type-2 h2:after,
+  .region-kassel-land .link-type-listing-module.type-2 .h2:after,
+  .region-kassel-land .link-type-listing-module.type-2 h3:after,
+  .region-kassel-land .link-type-listing-module.type-2 .h3:after,
+  .region-kassel-land .link-type-listing-module.type-2 h4:after,
+  .region-kassel-land .link-type-listing-module.type-2 .h4:after,
+  .region-kassel-land .link-type-listing-module.type-2 h5:after,
+  .region-kassel-land .link-type-listing-module.type-2 .h5:after,
+  .region-kassel-land .link-type-listing-module.type-2 h6:after,
+  .region-kassel-land .link-type-listing-module.type-2 .h6:after {
     position: absolute;
     right: 0px;
     top: 7px; }
@@ -9331,10 +9419,30 @@ html, body {
     padding: 0px; }
     .region-kassel-land .link-type-listing-module ul li:first-child {
       margin-top: 0px; }
-    .region-kassel-land .link-type-listing-module ul li h1, .region-kassel-land .link-type-listing-module ul li .h1, .region-kassel-land .link-type-listing-module ul li h2, .region-kassel-land .link-type-listing-module ul li .h2, .region-kassel-land .link-type-listing-module ul li h3, .region-kassel-land .link-type-listing-module ul li .h3, .region-kassel-land .link-type-listing-module ul li h4, .region-kassel-land .link-type-listing-module ul li .h4, .region-kassel-land .link-type-listing-module ul li h5, .region-kassel-land .link-type-listing-module ul li .h5, .region-kassel-land .link-type-listing-module ul li h6, .region-kassel-land .link-type-listing-module ul li .h6 {
+    .region-kassel-land .link-type-listing-module ul li h1, .region-kassel-land .link-type-listing-module ul li .h1,
+    .region-kassel-land .link-type-listing-module ul li h2,
+    .region-kassel-land .link-type-listing-module ul li .h2,
+    .region-kassel-land .link-type-listing-module ul li h3,
+    .region-kassel-land .link-type-listing-module ul li .h3,
+    .region-kassel-land .link-type-listing-module ul li h4,
+    .region-kassel-land .link-type-listing-module ul li .h4,
+    .region-kassel-land .link-type-listing-module ul li h5,
+    .region-kassel-land .link-type-listing-module ul li .h5,
+    .region-kassel-land .link-type-listing-module ul li h6,
+    .region-kassel-land .link-type-listing-module ul li .h6 {
       position: relative;
       display: inline-block; }
-      .region-kassel-land .link-type-listing-module ul li h1:after, .region-kassel-land .link-type-listing-module ul li .h1:after, .region-kassel-land .link-type-listing-module ul li h2:after, .region-kassel-land .link-type-listing-module ul li .h2:after, .region-kassel-land .link-type-listing-module ul li h3:after, .region-kassel-land .link-type-listing-module ul li .h3:after, .region-kassel-land .link-type-listing-module ul li h4:after, .region-kassel-land .link-type-listing-module ul li .h4:after, .region-kassel-land .link-type-listing-module ul li h5:after, .region-kassel-land .link-type-listing-module ul li .h5:after, .region-kassel-land .link-type-listing-module ul li h6:after, .region-kassel-land .link-type-listing-module ul li .h6:after {
+      .region-kassel-land .link-type-listing-module ul li h1:after, .region-kassel-land .link-type-listing-module ul li .h1:after,
+      .region-kassel-land .link-type-listing-module ul li h2:after,
+      .region-kassel-land .link-type-listing-module ul li .h2:after,
+      .region-kassel-land .link-type-listing-module ul li h3:after,
+      .region-kassel-land .link-type-listing-module ul li .h3:after,
+      .region-kassel-land .link-type-listing-module ul li h4:after,
+      .region-kassel-land .link-type-listing-module ul li .h4:after,
+      .region-kassel-land .link-type-listing-module ul li h5:after,
+      .region-kassel-land .link-type-listing-module ul li .h5:after,
+      .region-kassel-land .link-type-listing-module ul li h6:after,
+      .region-kassel-land .link-type-listing-module ul li .h6:after {
         content: ' ';
         width: 11px;
         height: 22px;
